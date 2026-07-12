@@ -1,0 +1,13 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/c:\\Users\\USER\\Desktop\\monografiaIntro\\Monografia-latex\\monografia.aux": true,
+        "**/c:\\Users\\USER\\Desktop\\monografiaIntro\\Monografia-latex\\monografia.log": true,
+        "**/c:\\Users\\USER\\Desktop\\monografiaIntro\\Monografia-latex\\monografia.gz": true,
+        "**/c:\\Users\\USER\\Desktop\\monografiaIntro\\Monografia-latex\\monografia.out": true
+    }
+}
