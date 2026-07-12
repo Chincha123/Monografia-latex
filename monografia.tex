@@ -3,7 +3,7 @@
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
 \usepackage{titlesec}
-\setcounter{secnumdepth}{0}
+\setcounter{secnumdepth}{6}
 \titleformat{\section}[block]{\normalfont\Large\bfseries\centering}{}{0pt}{} %subtitulo nivel 1 centrado y en negrita
 \titleformat{\subsection}[block]{\normalfont\large\bfseries}{}{0pt}{} %subtitulo nivel 2 alineado a la izquierda y en negrita
 \usepackage{geometry}
@@ -13,123 +13,139 @@
 
 % Redujimos los márgenes verticales a 2.5cm para ganar espacio
 \geometry{
-    top=2.5cm,
-    bottom=2.5cm,
-    left=3cm,
-    right=3cm
+	top=2.5cm,
+	bottom=2.5cm,
+	left=3cm,
+	right=3cm
 }
 
 \begin{document}
-
-\begin{titlepage}
-    \centering
-    
-    {\LARGE \textbf{Universidad Nacional Mayor de San Marcos} \par}
-    \vspace{0.2cm}
-    {\normalsize Universidad del Perú, Decana de América \par}
-    
-    \vspace{1cm}
-    
-    % Imagen reducida al 35% del ancho del texto
-    \includegraphics[width=0.35\textwidth]{imagenes/logo_unmsm.png} \par
-    
-    \vspace{1cm}
-    
-    {\normalsize \textbf{Facultad de Ingeniería de Sistemas e Informática} \par}
-    \vspace{0.1cm}
-    {\normalsize \textbf{Escuela Profesional de Ingeniería de Sistemas} \par}
-    
-    \vspace{1.2cm}
-    
-    {\Large 'RED GPRS y GSM vs LORA' \par}
-    
-    \vspace{1.2cm}
-    
-    {\normalsize \textbf{Docente:} Uscuchagua Flores, Christian Gelber \par}
-    
-    \vspace{0.5cm}
-    
-    {\normalsize \textbf{Curso:} Introducción a la Computación \par}
-    
-    \vspace{0.8cm}
-    
-    {\normalsize \textbf{Integrantes:} \par}
-    \vspace{0.2cm}
-    \begin{center}
-        \begin{minipage}{0.55\textwidth}
-            \begin{itemize}[label={\tiny$\blacksquare$}, leftmargin=*, itemsep=0.1cm]
-                \item \small 25200002 - Amanca Surco Juan Diego
-                \item \small 25200006 - Arce Crisanto Alonso
-                \item \small 25200089 - Cuba Condori Jorge Luis
-                \item \small 25200010 - Cárdenas Barrientos Nelson Enrique
-            \end{itemize}
-        \end{minipage}
-    \end{center}
-    
-    \vfill
-    
-    {\Large \textbf{2026} \par}
-    \vspace{0.1cm}
-    \rule{1.5cm}{1pt}
-    
-\end{titlepage}
-
-\newpage
-\begin{abstract}
-	aaa
-\end{abstract}
-\pagebreak
-
-\tableofcontents
-\pagebreak
-
-\section{Introducción}
-Es claro el avance que ha tenido la tecnología estos últimos años, quien iba a pensar en la antigüedad, que en el presente, íbamos a ser capaces de conectarnos con cualquier otra persona en cualquier parte del mundo, en épocas pasadas, las señales de humo y las palomas mensajeras eran probablemente la salvación para alguien que quisiera comunicarse con otra persona distanciadas abruptamente. De hecho, hasta poco después de la creación de la primera computadora entre los años 1936 y 1938, el principal objetivo de crear estos dispositivos no era lograr la comunicación entre distintas personas, sino que la ENIAC, fue diseñada principalmente para descifrar mensajes en código de los alemanes, generados por la máquina ENIGMA durante la Segunda Guerra Mundial (Montoya, s.f). El tema de las redes informáticas tomó impulso en épocas modernas y en definitiva, ha abierto las puertas a muchas facilidades para los humanos, desde mandar mensajes cotidianos, a poder conectarnos a internet para una entrevista de trabajo.
-\subsection{Presentación del tema}
-\subsection{Objetivos de la monografía}
-\subsection{Justificación de la investigación}
-
-\section{Desarrollo}
-\subsection{Fundamentos y Arquitectura de Red}
-\subsubsection{Definición de una red GSM/GPRS y LoRa}
-\subsubsection{Evolución celular de la red GSM/GPRS}
-\subsubsection{Aspectos técnicos de las redes}
-
-\subsection{Análisis comparativo entre las tecnologías GSM/GPRS y LoRa}
-\subsubsection{Ancho de banda y Tasa de Transferencia}
-\subsubsection{Consumo Energético}
-\subsubsection{Alcance y Penetración}
-\subsubsection{Escalabilidad de la red}
-\subsubsection{Viabilidad económica y rentabilidad}
-
-\subsection{Seguridad, Privacidad y Fiabilidad}
-\subsubsection{Seguridad en GSM/GPRS}
-\subsubsection{Seguridad en LoRa}
-\subsubsection{AGREGAR EL OTRO SUBPUNTO}
-
-\subsection{Aplicación de estas redes informáticas}
-\subsubsection{A nivel local (Perú)}
-\subsubsection{A nivel Global}
-\subsubsection{El Futuro de la Competencia}
-
-\subsection{Redes 2G, 3G, 4G y 5G}
-\subsubsection{Definiciones y características fundamentales}
-\subsubsection{Rol e infraestructura de las antenas}
-\subsubsection{El apagón tecnológico de la red 2G}
-\subsubsection{Limitaciones y retos para el despliegue del 5G en el Perú}
-\subsubsection{Marco legal y normativo}
-
-\pagebreak
-\section{Conclusión}
-\pagebreak
-
-\section{Bibliografía}
-\pagebreak
-
-\section{Anexos}
-\pagebreak
-
-\section{Referencias Bibliográficas}
-\pagebreak
-
+	
+	\begin{titlepage}
+		\centering
+		
+		{\LARGE \textbf{Universidad Nacional Mayor de San Marcos} \par}
+		\vspace{0.2cm}
+		{\normalsize Universidad del Perú, Decana de América \par}
+		
+		\vspace{1cm}
+		
+		% Imagen reducida al 35% del ancho del texto
+		\includegraphics[width=0.35\textwidth]{imagenes/logo_unmsm.png} \par
+		
+		\vspace{1cm}
+		
+		{\normalsize \textbf{Facultad de Ingeniería de Sistemas e Informática} \par}
+		\vspace{0.1cm}
+		{\normalsize \textbf{Escuela Profesional de Ingeniería de Sistemas} \par}
+		
+		\vspace{1.2cm}
+		
+		{\Large 'RED GPRS y GSM vs LORA' \par}
+		
+		\vspace{1.2cm}
+		
+		{\normalsize \textbf{Docente:} Uscuchagua Flores, Christian Gelber \par}
+		
+		\vspace{0.5cm}
+		
+		{\normalsize \textbf{Curso:} Introducción a la Computación \par}
+		
+		\vspace{0.8cm}
+		
+		{\normalsize \textbf{Integrantes:} \par}
+		\vspace{0.2cm}
+		\begin{center}
+			\begin{minipage}{0.55\textwidth}
+				\begin{itemize}[label={\tiny$\blacksquare$}, leftmargin=*, itemsep=0.1cm]
+					\item \small 25200002 - Amanca Surco Juan Diego
+					\item \small 25200006 - Arce Crisanto Alonso
+					\item \small 25200089 - Cuba Condori Jorge Luis
+					\item \small 25200010 - Cárdenas Barrientos Nelson Enrique
+				\end{itemize}
+			\end{minipage}
+		\end{center}
+		
+		\vfill
+		
+		{\Large \textbf{2026} \par}
+		\vspace{0.1cm}
+		\rule{1.5cm}{1pt}
+		
+	\end{titlepage}
+	
+	\newpage
+	\begin{abstract}
+		aaa
+	\end{abstract}
+	\pagebreak
+	
+	\tableofcontents
+	\pagebreak
+	
+	\section{Introducción}
+	Es claro el avance que ha tenido la tecnología estos últimos años, quien iba a pensar en la antigüedad, que en el presente, íbamos a ser capaces de conectarnos con cualquier otra persona en cualquier parte del mundo, en épocas pasadas, las señales de humo y las palomas mensajeras eran probablemente la salvación para alguien que quisiera comunicarse con otra persona distanciadas abruptamente. De hecho, hasta poco después de la creación de la primera computadora entre los años 1936 y 1938, el principal objetivo de crear estos dispositivos no era lograr la comunicación entre distintas personas, sino que la ENIAC, fue diseñada principalmente para descifrar mensajes en código de los alemanes, generados por la máquina ENIGMA durante la Segunda Guerra Mundial (Montoya, s.f). El tema de las redes informáticas tomó impulso en épocas modernas y en definitiva, ha abierto las puertas a muchas facilidades para los humanos, desde mandar mensajes cotidianos, a poder conectarnos a internet para una entrevista de trabajo.
+	\subsection{Presentación del tema}
+	\subsection{Objetivos de la monografía}
+	\subsection{Justificación de la investigación}
+	
+	\section{Desarrollo}
+	\subsection{2.1 Fundamentos y Arquitectura de Red}
+	\subsubsection{Definiciones}
+	Para analizar la evolución y el funcionamiento de las tecnologías inalámbricas GSM, GPRS y LoRa, es necesario aclarar los conceptos base que permiten comprender su compleja arquitectura:
+	
+	\paragraph{Red celular:}~\\ 
+	Es una infraestructura de telecomunicaciones lo cual Huidobro (2020) concibe de forma técnica como dividir el territorio al que se pretende dar servicio en células, o celdas (normalmente hexagonales), cada una servida por una estación base o estación de radio, que permite ofrecer cobertura continua y reutilizar frecuencias sin interferencia entre células no adyacentes.
+	
+	\paragraph{GSM}
+	
+	\paragraph{GPRS}
+	
+	\paragraph{LoRa}
+	
+	\paragraph{LoRaWAN}
+	
+	\paragraph{LPWAN}
+	
+	\subsubsection{Evolución celular de la red GSM/GPRS}
+	\subsubsection{Aspectos técnicos de las redes}
+	
+	\subsection{Análisis comparativo entre las tecnologías GSM/GPRS y LoRa}
+	\subsubsection{Ancho de banda y Tasa de Transferencia}
+	\subsubsection{Consumo Energético}
+	\subsubsection{Alcance y Penetración}
+	\subsubsection{Escalabilidad de la red}
+	\subsubsection{Viabilidad económica y rentabilidad}
+	
+	\subsection{Seguridad, Privacidad y Fiabilidad}
+	\subsubsection{Seguridad en GSM/GPRS}
+	\subsubsection{Seguridad en LoRa}
+	\subsubsection{AGREGAR EL OTRO SUBPUNTO}
+	
+	\subsection{Aplicación de estas redes informáticas}
+	\subsubsection{A nivel local (Perú)}
+	\subsubsection{A nivel Global}
+	\subsubsection{El Futuro de la Competencia}
+	
+	\subsection{Redes 2G, 3G, 4G y 5G}
+	\subsubsection{Definiciones y características fundamentales}
+	\subsubsection{Rol e infraestructura de las antenas}
+	\subsubsection{El apagón tecnológico de la red 2G}
+	\subsubsection{Limitaciones y retos para el despliegue del 5G en el Perú}
+	\subsubsection{Marco legal y normativo}
+	
+	\pagebreak
+	\section{Conclusión}
+	\pagebreak
+	
+	\section{Bibliografía}
+	\pagebreak
+	
+	\section{Anexos}
+	\pagebreak
+	
+	\section{Referencias Bibliográficas}
+	\pagebreak
+	
 \end{document}
+
