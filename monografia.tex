@@ -98,15 +98,15 @@
 	\paragraph{Red celular:}~\\ 
 	Es una infraestructura de telecomunicaciones lo cual Huidobro (2020) concibe de forma técnica como dividir el territorio al que se pretende dar servicio en células, o celdas (normalmente hexagonales), cada una servida por una estación base o estación de radio, que permite ofrecer cobertura continua y reutilizar frecuencias sin interferencia entre células no adyacentes.
 	
-	\paragraph{GSM}
+	\paragraph{GSM}~\\
 	
-	\paragraph{GPRS}
+	\paragraph{GPRS}~\\
 	
-	\paragraph{LoRa}
+	\paragraph{LoRa}~\\
 	
-	\paragraph{LoRaWAN}
+	\paragraph{LoRaWAN}~\\
 	
-	\paragraph{LPWAN}
+	\paragraph{LPWAN}~\\
 	
 	\subsubsection{Evolución celular de la red GSM/GPRS}
 	\subsubsection{Aspectos técnicos de las redes}
@@ -114,16 +114,38 @@
 	\subsection{Análisis comparativo entre tecnologías GSM/GPRS y LoRa}
 
 	\subsubsection{Ancho de banda y Tasa de Transferencia}
+	Este apartado desarrolla una evaluación comparativa entre la tecnología GSM/GPRS y LoRa. A continuación, se examinarán sus principales métricas de rendimiento para establecer qué tecnología se adapta mejor a diferentes requisitos operativos y energéticos. 
+
+	\paragraph{GSM}~\\
+	En redes GSM, las aplicaciones operan en la banda de 900 MHz. El constante incremento del tráfico de datos, dio lugar a distintas versiones con múltiples ancho de banda. En este caso se enseñara 2 estándares:\\
+	• GSM 900 – banda de frecuencia de 900 MHz, ancho de banda de 2 × 25 MHz.\\
+	• GSM 1800 – banda de frecuencia de 1800 MHz, ancho de banda de 2 × 75 MHz.\\
+	• GSM 1900 – banda de frecuencia de 1900 MHz, ancho de banda de 2 × 75 MHz.\\
+	Las versiones GSM 1800 y GSM 1900, son conocidas a veces como sistemas DCS (Digital Communication System o Digital Cellular System) (Becvar, 2015).\\
+	Castilla (2005) y (Sanchez, 2005), destacan que GSM es un sistema originalmente diseñado para voz y  mensajes cortos (SMS), el cual permite tasas de transferencia de 9.6 Kbps.
+
+	\paragraph{GPRS}~\\
+	Al ser una versión mejorada del GSM, las redes GPRS manejan similares anchos de banda a las GSM. Sin embargo la diferencia recae en las tasas de transferencias (Zhunio, 2008).\\
+	Sanchez (2005) agrega que GPRS tiene un máximo de velocidad  de transferencia de 100 kbps de forma estándar (aunque teóricamente es de 171.2 kbps). Así mismo, se establece el uso de las velocidades de la conexión GPRS en 128Kbps para su operación con internet y transacciones de datos (Moy, 2009) .
+
+	\paragraph{LoRa}~\\
+	Ordoñez (2017), indica que LoRa opera en bandas ISM por debajo de 1GHz (en Europa corresponde bandas de 433-868 MHz), al ser banda libre se puede utilizar sin licencia. También operan en la banda de frecuencias no licenciada de 900 MHz  (Gonzalez, 2024).\\
+	El ancho de banda de las redes LoRa puede variar de 293.3 bps hasta 3,418  Kbps afectando por la variación del Spreading Factor (SF7 - SF12) y del Code Rate (proporción de los datos transmitidos) (Young, 2022).
 
 	\subsubsection{Consumo Energético}
+	Jaramillo (2021), explica que las redes GPRS junto a las redes GSM tienden a realizar un mayor consumo eléctrico (estimado en 80\% menos) en comparación a la red LoRa. \\
+	Gonzales (2024), establece que las redes LoRa son una red de sensores de baja potencia y por ende de un bajo consumo energético al recorrer grandes distancias de comunicación.
 
 	\subsubsection{Alcance y Penetración}
-
-	\subsubsection{Escalabilidad de la red}
+	Las redes GSM y GPRS comparten la misma infraestructura de antenas celulares. Su alcance depende de la cobertura del operador. Tienen excelente señal en zonas urbanas, pero sufren de puntos ciegos en zonas rurales remotas y tienen una baja penetración en sótanos o interiores profundos.\\
+	Ordoñez (2017) aclara que las redes de conexión LoRa disponen de un amplio alcance (de varios km).  
 
 	\subsubsection{Viabilidad económica y rentabilidad}
+	Sanchez (2005) agrega que los gastos en redes GSM se ejecutan por medio de cálculos por parte de la operadora y este restringe las llamadas al llegar a un límite fijado por el usuario. Además, los costes en tecnologías 2.5G son  por medio del volumen de información intercambiada y no por tiempo de conexión (Zhunio, 2008).\\
+	Gonzales (2024), establece que las redes LoRa son viables por los bajos costos que resultan al instalarlas, al igual que el uso de algunos módulos LoRa.\\
 
-	
+	En resumen, las diferencias entre GSM/GPRS y LoRa serían las siguientes:\\
+
 	\subsection{Seguridad, Privacidad y Fiabilidad}
 	\subsubsection{Seguridad en GSM/GPRS}
 	\subsubsection{Seguridad en LoRa}
@@ -143,15 +165,17 @@
     \paragraph{2G}~\\
     La irrupción del 2G  se dio en el año 1992. Según Constain (2019) indica que se caracteriza por ser la primera en ofrecer servicios en forma digital, a comparación de la anterior (1G) que se caracterizaba por ser análoga. Fue implementada con la tecnología GSM (Global System for Mobile Communication), esta generación añadió la comunicación de usuarios por medio de Fax y mensajes SMS (Short Message Service). Esta tecnología alcanzaba velocidades de 9.6 Kbps hasta 285 Kbps.\\
     También Peñafiel (2015)  señala que la tecnología  digital inalámbrica fue estrenada bajo el nombre de Sistema Global para comunicaciones Móviles o GSM. La familia de tecnologías de segunda generación por estándar 3GPP está confor-mada por GSM, sistema de radio por paquetes (GPRS) y velocidades mejoradas para la evolución de GSM (EDGE) \\
-	Algunas mejoras que puede obtener la red 2G para aumentar su tasa de transferencia se puede dar por diversos medios:\\
-    Según Mach (2015), mediante el uso de transmisión basada en conmutación de paquetes, como GPRS (General Packet Radio Service), que llega a una velocidad de 115 Kbps (también conocido como 2.5G). En el caso de transmitirse por EDGE (Enhanced Data Rates for GSM Evolution), es conocido como 2.75G que aumenta la capacidad de transferencia. Este es considerado la última mejora del 2G antes de la introducción del 3G.
+	Según Mach (2015), se evaluaron algunas mejoras que puede obtener las redes 2G para aumentar su tasa de transferencia se puede dar por diversos medios:\\
+	• Mediante el uso de transmisión basada en conmutación de paquetes, como GPRS (General Packet Radio Service), que llega a una velocidad de 115 Kbps (también conocido como 2.5G). \\
+	• En el caso de transmitirse por EDGE (Enhanced Data Rates for GSM Evolution), es conocido como 2.75G que aumenta la capacidad de transferencia. Este es considerado la última mejora del 2G antes de la introducción del 3G.
 
     \paragraph{3G}~\\
     La siguiente generación apareció en el año 2004, Galindo (2025) explica que debido a la nueva realidad mundial, con la evolución de los dispositivos móviles (teléfonos inteligentes, tabletas, computadoras portátiles) y masificación del internet, bajo esos nuevos requerimientos se implementó la nueva red.\\
     Tuvo un enfoque relacionado a la transmisión de voz y datos por medio de internet, con un soporte a aplicaciones multimedia y así obtener una alta transmisión de datos (Constain, 2019).\\
     El 3G adquirió el nombre de UMTS (Universal Terrestrial Mobile System) garantiza características razonables de transmisión, baja atenuación de señal y fácil penetración de la señal en edificios, la tecnología estándar para la interfaz del UMTS es el WCDMA (Wideband Code Division Multiple Access), ideal para el aumento de la capacidad y la transmisión de datos.\\
     De acuerdo con Becvar (2015), la utilización de WCDMA involucra una transferencia suave, dado a que celdas adyacentes utilizan la misma frecuencia (el traspaso entre dos celdas se puede realizar sin ninguna interrupción); un control de potencia, esta debe ser la misma que la estación base, debido a que podría bloquear una celda entera en caso de desborde y el receptor rastrillo, capaz de recibir y combinar señales individuales y así evitar la propagación multicamino y una fuerte atenuación de la señal.\\
-    Cuando la tecnología 3G está vinculada con la red HSPA+ (High Speed Downlink Packet Access ) alcanza velocidades de 14 Mbps teóricamente, es considerado una optimización de la red UMTS (Blasco, 2016), a esta unión se conoce como 3.5G. Becvar (2015) y Constain (2019) añade que también aparece una mejora llamada 3.9G en combinación con LTE (Long Term Evolution) aunque algunos lo consideran tecnología 4G, no llega a alcanzar el estándar de velocidad de 1Gbps para llegar al umbral de la cuarta generación, debido a esto es considerado una versión de “transición” antes de pasar al 4G .
+    Cuando la tecnología 3G está vinculada con la red HSPA+ (High Speed Downlink Packet Access ) alcanza velocidades de 14 Mbps teóricamente, es considerado una optimización de la red UMTS (Blasco, 2016), a esta unión se conoce como 3.5G.\\
+	Becvar (2015) y Constain (2019) añade que también aparece una mejora llamada 3.9G en combinación con LTE (Long Term Evolution) aunque algunos lo consideran tecnología 4G, no llega a alcanzar el estándar de velocidad de 1Gbps para llegar al umbral de la cuarta generación, debido a esto es considerado una versión de “transición” antes de pasar al 4G .
 
     \paragraph{4G}~\\
     El  4G tuvo su aparición a partir del año 2009. Este se  presentó como una mejora considerable a las tecnologías 3G, Constain (2019), destacó que las redes 4G incrementan la transmisión de datos y voz a altas velocidades mediante redes inalámbricas. En dispositivos móviles, la tecnología 4G podría llegar a velocidades 10 veces más rápidas en comparación a las redes 2G y 3G. En el caso del 3G llegaba a velocidades de 10Mb/s, mientras el 4G poseía velocidad  de 100Mb/s aproximadamente. Sirve principalmente en la optimización de servicios como transmisión de videos y audios vía streaming, videoconferencias, descarga de archivos multimedia, etc.\\
