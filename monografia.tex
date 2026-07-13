@@ -2,6 +2,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
+\usepackage{caption}
+\captionsetup[figure]{
+	labelfont=bf,              % Figura en negrita
+	justification=raggedright, % Alineacion a la izq
+	singlelinecheck=false,     % Evita que se centre si el título es muy corto
+	labelsep=newline           % título descriptivo en la línea de abajo
+}
 \usepackage{titlesec}
 \setcounter{secnumdepth}{6}
 \titleformat{\section}[block]{\normalfont\Large\bfseries\centering}{}{0pt}{} %subtitulo nivel 1 centrado y en negrita
@@ -97,6 +104,7 @@
 	Para analizar la evolución y el funcionamiento de las tecnologías inalámbricas GSM, GPRS y LoRa, es necesario aclarar los conceptos base que permiten comprender su compleja arquitectura:
 	
 	\paragraph{Red celular:}~\\ 
+	
 	Es una infraestructura de telecomunicaciones lo cual Huidobro (2020) concibe de forma técnica como dividir el territorio al que se pretende dar servicio en células, o celdas (normalmente hexagonales), cada una servida por una estación base o estación de radio, que permite ofrecer cobertura continua y reutilizar frecuencias sin interferencia entre células no adyacentes.
 	
 	\paragraph{GSM}~\\
@@ -105,9 +113,30 @@
 	
 	\paragraph{LoRa}~\\
 	
-	\paragraph{LoRaWAN}~\\
+	Si hablamos de transmisión de datos, sin duda alguna, tenemos que hablar del internet de las cosas (IoT), esta tecnología, es la encargada de permitir que ciertos dispositivos inteligentes se comuniquen entre sí y a su vez, con otros dispositivos conectados a Internet (IBM, s.f), pero estos datos no se teletransportan y automáticamente aparecen en el dispositivo receptor, sino que deben viajar a través de una red inalámbrica para poder ser recibidos y posteriormente manipulados. Existen diversos tipos de redes que pueden llevar a cabo esta función, por ejemplo, están las LPWAN (Low Power Wide Area Networks), las cuales suponen una alternativa real y eficiente a las conexiones de datos móviles ya implantadas en telemetría, aunque solo para bajos volúmenes de datos (Sinelec, s.f) entre las redes de este tipo, pero que son de uso libre, destaca LoRa y su protocolo LoRaWAN.
 	
-	\paragraph{LPWAN}~\\
+	Según The Things Network (s.f), se define a la red LoRa (Long Range o Largo Alcance en español), como una técnica de modulación inalámbrica de radiofrecuencia, basado en la tecnología de espectro ensanchado por chirrido (CSS).
+	Es decir, es la capa física que se va a complementar con los dispositivos conectados de forma inalámbrica con un largo alcance y usando la menor cantidad de energía posible.
+	
+	LoRa empieza en el año 2009 como una alternativa al uso que se le estaba dando a la red Wifi para la transmisión de datos en sistemas IoT, ya que con esta, se consumía bastante batería en los dispositivos y no cubría las grandes distancias consideradas de diversos proyectos. Es debido a esto que en ese mismo año, dos amigos franceses ( Nicolas Sornin y Olivier Seller) se juntaron y decidieron trabajar para crear una red inalámbrica que además de solucionar estas dificultades, sea de libre acceso. Un año después, se juntaron con François Sforza, y juntos fundaron la empresa Cycleo e intentaron añadir capacidades de comunicación inalámbrica a los contadores de gas, agua y electricidad (Semtech, 2020), todo ello basándose en el la tecnología de modulación Chirp Spread Spectrum (CSS) , la cual era ampliamente utilizada en el sonar de la industria marítima y el radar de la aviación de ese entonces.
+	La empresa Semtech adquiere a Cycleo en el año 2012 y junto a los integrantes originales. perfeccionaron los modelos y finalizaron los chips y gateways necesarios para los dispositivos finales (SX1272 y SX1276), así como para las pasarelas (SX1301). Además, se implementó un protocolo de control de acceso llamado LoRa MAC, con el cual, se especificaron y establecieron los formatos de mensaje y las capas de seguridad (cifrado) para las comunicaciones dentro de la red (Bassi, 2021).
+	En 2015 se funda Lora Alliance, una asociación social sin fines de lucro que tiene por objetivo: Expandir el uso global de LoRa y LoRaWAN en el ámbito del IoT, con el fin de impulsar la sostenibilidad para maximizar la eficiencia, mejorar la calidad de vida y proteger los recursos del planeta (LoRa Alliance, 2022).
+	
+	\paragraph{Espectro Ensanchado por Chirridos (CSS)}~\\
+	
+	“Esta es una tecnología de radiofrecuencia de alto alcance para comunicaciones inalámbricas” (Inpixon, s.f). Básicamente, este tipos de ondas, permiten distribuir señales de radio en un rango mucho más amplio que cualquier otro y de una manera un tanto diferente, a comparación de las ondas sinusoidales a las que se les puede modificar tanto la amplitud como la frecuencia para poder captar una información de distinta calidad, este tipo de espectro se divide en chirps ascendentes y descendentes (figura 1), siendo estos, lineas rectas  que tienen como estándares de medida: velocidad de barrida y el ancho de banda (figura 2).
+	La razón por la que presentan esta forma, se le atribuye a la facilidad por la que pueden ser identificadas y aisladas de cualquier otro ruido proveniente del ambiente o entorno, de esta manera, este tipo de espectro tiene como cualidad, la alta tolerancia a interferencias ambientales.
+	\begin{figure}[h!]
+		\caption{\textit{Conjunto de ondas de tipo CSS}}
+		\centering
+		\includegraphics[width=0.5\textwidth]{imagenes/ejemploOndasCSSFIG1ENRIQUE.png}
+		\par
+		\vspace{0.3cm}
+		\raggedright
+		\small\textit{Nota: Ejemplo de conjunto de ondas CSS. Se puede apreciar el patrón denominado 'alerta', seguido de la información a transmitir.} \\ \vspace{0.1cm} Extraido de: Richard Wenner [Youtube].
+	\end{figure}
+	\pagebreak
+	\paragraph{LoRaWAN}~\\
 	
 	\subsubsection{Evolución celular de la red GSM/GPRS}
 	\subsubsection{Aspectos técnicos de las redes}
