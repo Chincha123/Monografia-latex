@@ -209,10 +209,20 @@
     \textit{Nota:} Actualizado con información reportada al 2025-I. \\
 	\end{table}
 
-	\subsection{Seguridad, Privacidad y Fiabilidad}
-	\subsubsection{Seguridad en GSM/GPRS}
+	\subsection{2.3. Seguridad, Privacidad y Fiabilidad}
+
+	La seguridad es uno de los aspectos más importantes en cualquier tipo de tecnología de comunicación inalámbrica, más aún cuando se emplea para aplicaciones críticas como el Internet de las Cosas (IoT), la telemetría, los sistemas de monitoreo ambiental o las infraestructuras inteligentes. Tanto GSM/GPRS como LoRaWAN incorporan mecanismos de autenticación, cifrado e integridad de los datos; sin embargo, fueron diseñadas con objetivos distintos, lo que genera diferencias importantes en el nivel de protección, la privacidad de la información y la confiabilidad.
+	
+	\subsubsection{2.3.1. Seguridad en GSM/GPRS}
+
+	La arquitectura de seguridad de las redes GSM y su extensión de datos GPRS fue diseñada para proteger la identidad del usuario y la seguridad inalámbrica mediante mecanismo de autenticación que valida la identidad del usuario antes de establecer la comunicación. Este proceso de seguridad se fundamenta en la tarjeta SIM, la cual almacena la identidad única del usuario (IMSI) y una clave secreta (Ki). Al intentar establecer una conexión, el centro de autenticación de la red y la tarjeta SIM realizan un proceso de verificación criptográfica que, en caso de coincidir, genera una clave temporal encargada de cifrar la comunicación. (Wray Castle, 2024).\\
+
+	La autenticación se hace mediante el algoritmo A3/A8 y cifrado del canal de radio mediante la familia A5 (A5/1, A5/2 y A5/3). Según Ziavi (2021), uno de los problemas estructurales más señalados es que GSM no autentica a la red frente al terminal, sino únicamente al terminal frente a la red, lo que habilita ataques de tipo man-in-the-middle mediante estaciones base falsas conocidas como IMSI catchers.\\
+
+	Este defecto estructural no solo compromete a los equipos antiguos, sino que representa una amenaza activa para los dispositivos de última generación debido a los ataques de degradación (downgrade attacks). De acuerdo con Karakoc et al. (2023), dado que los dispositivos móviles actuales mantienen la compatibilidad hacia atrás para asegurar la continuidad del servicio en zonas de baja cobertura, los ciberdelincuentes pueden bloquear intencionalmente las frecuencias de las redes 4G o 5G. Esta interferencia obliga al dispositivo a retroceder y conectarse a una red 2G comprometida, exponiendo de manera inmediata la privacidad y confidencialidad de sus comunicaciones \\
+
 	\subsubsection{Seguridad en LoRa}
-	\subsubsection{AGREGAR EL OTRO SUBPUNTO}
+	\subsubsection{Fiabilidad}
 	
 	\subsection{Aplicación de estas redes informáticas}
 	\subsubsection{A nivel local (Perú)}
@@ -361,4 +371,3 @@
 	\pagebreak
 	
 \end{document}
-
