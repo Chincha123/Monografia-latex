@@ -176,7 +176,6 @@
 		\raggedright
 		\small\textit{Nota: La figura detalla el mecanismo de la modulación CSS donde la señal de barrido se divide en $2^{SF}$ pasos denominados "chips". Utilizando un Spreading Factor de 7 ($SF=7$) } \\ \vspace{0.1cm} Extraido de: Mobilefish.com [Youtube].
 	\end{figure}
-	\pagebreak
 	\paragraph{LoRaWAN}~\\
 	
 	LoRaWAN es el protocolo de capa de control de acceso (MAC) basado en la modulación LoRa. Se trata de una capa de software que define como los dispositivos conectados, usan el hardware LoRa, como por ejemplo, el tipo de mensaje o con que frecuencia es que estos se transmiten (The Things Network, s.f).\\
@@ -201,6 +200,35 @@
 	Pasando a la capa de enlace, toda la franja azul representa al protocolo LoRaWAN, esta capa está gestionada por LoRa Alliance. Aquí se presenta el software que organiza cómo los dispositivos se comunican usando las ondas naranjas de abajo. Se dividen en tres clases de dispositivos según su capacidad de gestión que se explicarán a detalle más abajo.\\
 	
 	Finalmente tenemos la capa de aplicación, en el cual los datos llegan a ser recibidos y descifrados por completo, entonces es la etapa donde se decide que hacer con ellos. Sin antes haber pasado por LoRaMAC, el cual se encarga del empaquetado, direccionamiento, seguridad y encriptación.
+	\paragraph{Características de LoRa}~\\
+	
+	Las principales características de usar LoRa, junto a su protocolo como red designada para la trasmisión de datos en dispositivos de IoT son varías, entre las más destacadas se encuentran:
+	\vspace{0.5cm}
+	\begin{itemize}
+		\item \textbf{Su alcance extendido y bajo consumo:} Está diseñada para transmitir datos a distancias muy largas con una baja energía, esto es crucial para dispositivos que necesitan funcionar largos periodos de tiempo sin un cambio de baterías, debido a su posición geográfica o cualquier otro motivo.
+		\item \textbf{Banda libre:} Esto quiere decir que LoRa funciona en frecuencias libre sin licencia, como en 865MHz en Europa y 512MHz en Estados Unidos.
+		\item \textbf{Seguridad Incorporada:} Mecanismos de seguridad de 2 capas, utilizando algoritmos de cifrado AES de 128 bits
+		\item \textbf{Estructura flexible de red:} Implementa redes tanto públicas como privadas, ofreciendo tanto a empresas como comunidades de elaborar sus propios proyectos.
+	\end{itemize}
+	\paragraph{Arquitectura de LoRaWAN}~\\
+	Una arquitectura típica de LoRaWAN está compuesta de la siguiente manera:
+	\begin{itemize}
+		\item \textbf{Nodos Finales}
+		\item \textbf{Gateways}
+		\item \textbf{Servidor de Red (Network Servers)}
+		\item \textbf{Servidor de Aplicación}
+	\end{itemize}
+	
+	Los nodos finales son los dispositivos finales que van a recoger los datos enviados y realizar acciones correspondientes. Estos pueden ser temperatura, humedad, localización, etc. o actuadores (válvulas, relés, motores, etc.) (Casado, s.f.).
+	
+	“Los gateways son los elementos que actúan como puentes entre los nodos finales y el servidor de red.”(IoT Lab, 2024). Estos componentes tienen como funcion principal, recoger las señales enviadas de los nodos finales y transmitirlos al servidor, donde se procesaran e integrarán en aplicaciones utiles Estos reciben multiples señales provenientes de diferentes nodos, dentro de su área de cobertura, una vez captadas, se envian principalmente por conexiones ethernet o red de celular y llegan a un servidor de red que se encarga de gestionarlas. Existen dos tipos de gateways, el primer tipo son los que poseen una compatibilidad directa con el network server, estos trabajan de forma integrada con el servidor, es decir, pueden realizar funciones adicionales como el filtrado de datos y optimización de la comunicación, antes de transmitir la información. Mientras que el segundo tipo son los gateways sin compatibilidad directa con el network server, en este caso, solamente actúan como simples repetidores de señal, no realizan procesamiento ni agregados a la información antes de enviarla. Solo cumplen una única función.
+	
+	Los network server o servidores de red, el cual es el componente principal de una red LoRaWAN, que gestiona la comunicación entre los dispositivos finales y las aplicaciones receptoras. Su función principal es que la información llegue de manera segura y completa. Esto lo hace verificando que solo los usuarios autorizados puedan acceder a la red, también asigna y administra las claves de sesión. Por último asegura la eliminación de mensajes duplicados.
+	
+	Los servidores de aplicación son las plataformas donde se procesan y utilizan los datos finales, donde se utilizan para tomar decisiones, elaborar informes y demás procesos.
+	
+	También es importante mencionar que los dispositivos IoT conectados a LoRaWAN también tienen sus clasificaciones, y esto se centra más en cómo y cuándo pueden recibir mensajes, siendo el downlink (para recibir datos) y uplink (para enviar datos) (IoTLab, 2025). En primer lugar están las de tipo A, las cuales envían un mensaje uplink y justo después espera un tiempo determinado para escuchar si el servidor responde downlink, en este tiempo, el dispositivo se encuentra en reposo. Después tenemos el tipo B, en el que tiene tiempos determinados donde se abren ventanas para recibir datos (downlink y uplink) que se abren en momentos programados. Por último, en el tipo C, los dispositivos se mantienen la mayor parte del tiempo disponibles para recibir y enviar datos por parte del servidor, excepto mientras están transmitiendo estos mismos, aunque esto implica un mayor consumo de energía.
+	
 	
 	\subsubsection{Evolución celular de la red GSM/GPRS}
 	\subsubsection{Aspectos técnicos de las redes}
@@ -209,7 +237,7 @@
 	
 	\subsubsection{Ancho de banda y Tasa de Transferencia}
 	
-	Este apartado desarrolla una evaluación comparativa entre la tecnología GSM/GPRS y LoRa. A continuación, se examinarán sus principales métricas de rendimiento para establecer qué tecnología se adapta mejor a diferentes requisitos operativos y energéticos. 
+	Este apartado desarrolla una evaluación comparativa entre la tecnología GSM/GPRS y LoRa. A continuación, se examinarán sus principales métricas de rendimiento para establecer qué tecnología se adapta mejor a diferentes requisitos operativos y energéticos.
 	
 	\paragraph{GSM}~\\
 	
