@@ -279,37 +279,46 @@
 	
 	\paragraph{GSM}~\\
 	
-	En redes GSM, las aplicaciones operan en la banda de 900 MHz. El constante incremento del tráfico de datos, dio lugar a distintas versiones con múltiples ancho de banda. En este caso se enseñara 2 estándares:\\
+	En redes GSM, las aplicaciones operan en la banda de 900 MHz. El constante incremento del tráfico de datos, dio lugar a distintas versiones con múltiples ancho de banda. En este caso se enseñara 2 estándares:\\	
 	• GSM 900 – banda de frecuencia de 900 MHz, ancho de banda de 2 × 25 MHz.\\
 	• GSM 1800 – banda de frecuencia de 1800 MHz, ancho de banda de 2 × 75 MHz.\\
 	• GSM 1900 – banda de frecuencia de 1900 MHz, ancho de banda de 2 × 75 MHz.\\
 	Las versiones GSM 1800 y GSM 1900, son conocidas a veces como sistemas DCS (Digital Communication System o Digital Cellular System) (Becvar, 2015).\\
-	Castilla (2005) y (Sanchez, 2005), destacan que GSM es un sistema originalmente diseñado para voz y  mensajes cortos (SMS), el cual permite tasas de transferencia de 9.6 Kbps.
+
+	Castilla (2005) y (Sanchez, 2005), destacan que GSM es un sistema originalmente diseñado para voz y  mensajes cortos (SMS), el cual permite tasas de transferencia de 9.6 Kbps. No fue concebido para transmisión eficiente de datos .
+
 	
 	\paragraph{GPRS}~\\
 	
-	Al ser una versión mejorada del GSM, las redes GPRS manejan similares anchos de banda a las GSM. Sin embargo la diferencia recae en las tasas de transferencias (Zhunio, 2008).\\
+	Al ser una versión mejorada del GSM, las redes GPRS manejan similares anchos de banda a las GSM. Sin embargo, presenta mayor eficiencia espectral que GSM puro al no reservar canal dedicado todo el tiempo, además la diferencia recae en las tasas de transferencias (Zhunio, 2008).\\
+
 	Sanchez (2005) agrega que GPRS tiene un máximo de velocidad  de transferencia de 100 kbps de forma estándar (aunque teóricamente es de 171.2 kbps). Así mismo, se establece el uso de las velocidades de la conexión GPRS en 128Kbps para su operación con internet y transacciones de datos (Moy, 2009) .
 	
 	\paragraph{LoRa}~\\
 	
 	Ordoñez (2017), indica que LoRa opera en bandas ISM por debajo de 1GHz (en Europa corresponde bandas de 433-868 MHz), al ser banda libre se puede utilizar sin licencia. También operan en la banda de frecuencias no licenciada de 900 MHz  (Gonzalez, 2024).\\
-	El ancho de banda de las redes LoRa puede variar de 293.3 bps hasta 3,418  Kbps afectando por la variación del Spreading Factor (SF7 - SF12) y del Code Rate (proporción de los datos transmitidos) (Young, 2022).
+
+	El ancho de banda de las redes LoRa puede variar de 293.3 bps hasta 3,418 Kbps (prioriza el alcance y bajo consumo sobre velocidad)  afectado por la variación del Spreading Factor (SF7 - SF12) y del Code Rate (proporción de los datos transmitidos) (Young, 2022). Diseñada para transmitir paquetes pequeños y esporádicos (telemetría de sensores), no streaming de datos. 
 	
 	\subsubsection{Consumo Energético}
 	
-	Jaramillo (2021), explica que las redes GPRS junto a las redes GSM tienden a realizar un mayor consumo eléctrico (estimado en 80\% menos) en comparación a la red LoRa. \\
-	Gonzales (2024), establece que las redes LoRa son una red de sensores de baja potencia y por ende de un bajo consumo energético al recorrer grandes distancias de comunicación.
-	
+	Jaramillo (2021), explica que las redes GPRS junto a las redes GSM tienden a realizar un mayor consumo eléctrico (estimado en 80\% menos) en comparación a la red LoRa. Los módulos GSM/GPRS típicos consumen picos de corriente de 200–2000 mA durante transmisión, agotando baterías en horas o días en uso continuo. \\
+	Gonzales (2024), establece que las redes LoRa son una red de sensores de baja potencia y por ende de un bajo consumo energético al recorrer grandes distancias de comunicación.\\
+
+	El dispositivo LoRa permanece la mayor parte del tiempo en modo sleep, despertando solo para transmitir paquetes cortos, lo que permite baterías con autonomía de años en lugar de horas o días. 
+
 	\subsubsection{Alcance y Penetración}
 	
-	Las redes GSM y GPRS comparten la misma infraestructura de antenas celulares. Su alcance depende de la cobertura del operador. Tienen excelente señal en zonas urbanas, pero sufren de puntos ciegos en zonas rurales remotas y tienen una baja penetración en sótanos o interiores profundos.\\
-	Ordoñez (2017) aclara que las redes de conexión LoRa disponen de un amplio alcance (de varios km).  
+	Las redes GSM y GPRS comparten la misma infraestructura de antenas celulares. Su alcance depende de la cobertura del operador. Tienen excelente señal en zonas urbanas (alcance de celda entre 1 y 35 km según densidad urbana), pero sufren de puntos ciegos en zonas rurales remotas y tienen una baja penetración en sótanos o interiores profundos.\\
+	Ordoñez (2017) aclara que las redes de conexión LoRa disponen de un amplio alcance (+10 km). Alcance típico de 2 a 15 km en zonas rurales y algunos cientos de metros a pocos km en entornos urbanos densos 
+
 	
 	\subsubsection{Viabilidad económica y rentabilidad}
 	
-	Sanchez (2005) agrega que los gastos en redes GSM se ejecutan por medio de cálculos por parte de la operadora y este restringe las llamadas al llegar a un límite fijado por el usuario. Además, los costes en tecnologías 2.5G son  por medio del volumen de información intercambiada y no por tiempo de conexión (Zhunio, 2008).\\
-	Gonzales (2024), establece que las redes LoRa son viables por los bajos costos que resultan al instalarlas, al igual que el uso de algunos módulos LoRa.\\
+	Sanchez (2005) agrega que los gastos en redes GSM se ejecutan por medio de cálculos por parte de la operadora y este restringe las llamadas al llegar a un límite fijado por el usuario, requiere tarjeta SIM y suscripción/contrato con un operador móvil. Además, los costes en tecnologías 2.5G son  por medio del volumen de información intercambiada y no por tiempo de conexión (Zhunio, 2008). \\
+	
+	Además, la inversión principal está en infraestructura propia (gateways / concentradores) y en los nodos sensores. Las inversiones iniciales pueden compensarse rápidamente con el ahorro derivado del uso de frecuencias sin licencia y el bajo mantenimiento, permitiendo a las empresas escalar proyectos IoT de forma rentable. Gonzales (2024), establece que las redes LoRa son viables por los bajos costos que resultan al instalarlas, al igual que el uso de algunos módulos LoRa.\\
+
 	En resumen, las diferencias entre GSM/GPRS y LoRa serían las siguientes:\\
 	\begin{table}[H]
 		\flushleft
