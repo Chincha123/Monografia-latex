@@ -284,20 +284,16 @@
 	• GSM 1800 – banda de frecuencia de 1800 MHz, ancho de banda de 2 × 75 MHz.\\
 	• GSM 1900 – banda de frecuencia de 1900 MHz, ancho de banda de 2 × 75 MHz.\\
 	Las versiones GSM 1800 y GSM 1900, son conocidas a veces como sistemas DCS (Digital Communication System o Digital Cellular System) (Becvar, 2015).\\
-
 	Castilla (2005) y (Sanchez, 2005), destacan que GSM es un sistema originalmente diseñado para voz y  mensajes cortos (SMS), el cual permite tasas de transferencia de 9.6 Kbps. No fue concebido para transmisión eficiente de datos .
-
 	
 	\paragraph{GPRS}~\\
 	
 	Al ser una versión mejorada del GSM, las redes GPRS manejan similares anchos de banda a las GSM. Sin embargo, presenta mayor eficiencia espectral que GSM puro al no reservar canal dedicado todo el tiempo, además la diferencia recae en las tasas de transferencias (Zhunio, 2008).\\
-
 	Sanchez (2005) agrega que GPRS tiene un máximo de velocidad  de transferencia de 100 kbps de forma estándar (aunque teóricamente es de 171.2 kbps). Así mismo, se establece el uso de las velocidades de la conexión GPRS en 128Kbps para su operación con internet y transacciones de datos (Moy, 2009) .
 	
 	\paragraph{LoRa}~\\
 	
 	Ordoñez (2017), indica que LoRa opera en bandas ISM por debajo de 1GHz (en Europa corresponde bandas de 433-868 MHz), al ser banda libre se puede utilizar sin licencia. También operan en la banda de frecuencias no licenciada de 900 MHz  (Gonzalez, 2024).\\
-
 	El ancho de banda de las redes LoRa puede variar de 293.3 bps hasta 3,418 Kbps (prioriza el alcance y bajo consumo sobre velocidad)  afectado por la variación del Spreading Factor (SF7 - SF12) y del Code Rate (proporción de los datos transmitidos) (Young, 2022). Diseñada para transmitir paquetes pequeños y esporádicos (telemetría de sensores), no streaming de datos. 
 	
 	\subsubsection{Consumo Energético}
@@ -306,13 +302,12 @@
 	Gonzales (2024), establece que las redes LoRa son una red de sensores de baja potencia y por ende de un bajo consumo energético al recorrer grandes distancias de comunicación.\\
 
 	El dispositivo LoRa permanece la mayor parte del tiempo en modo sleep, despertando solo para transmitir paquetes cortos, lo que permite baterías con autonomía de años en lugar de horas o días. 
-
+	
 	\subsubsection{Alcance y Penetración}
 	
 	Las redes GSM y GPRS comparten la misma infraestructura de antenas celulares. Su alcance depende de la cobertura del operador. Tienen excelente señal en zonas urbanas (alcance de celda entre 1 y 35 km según densidad urbana), pero sufren de puntos ciegos en zonas rurales remotas y tienen una baja penetración en sótanos o interiores profundos.\\
 	Ordoñez (2017) aclara que las redes de conexión LoRa disponen de un amplio alcance (+10 km). Alcance típico de 2 a 15 km en zonas rurales y algunos cientos de metros a pocos km en entornos urbanos densos 
 
-	
 	\subsubsection{Viabilidad económica y rentabilidad}
 	
 	Sanchez (2005) agrega que los gastos en redes GSM se ejecutan por medio de cálculos por parte de la operadora y este restringe las llamadas al llegar a un límite fijado por el usuario, requiere tarjeta SIM y suscripción/contrato con un operador móvil. Además, los costes en tecnologías 2.5G son  por medio del volumen de información intercambiada y no por tiempo de conexión (Zhunio, 2008). \\
@@ -454,7 +449,21 @@
 	
 	Por último se encuentra la irrigación, esta aplicación está orientada al cuidado de las áreas verdes, pues sensores que detectan el nivel de humedad y fertilidad de los suelos en las áreas verdes, pueden ajustar el caudal de agua con el que se riegan las plantas.\\
 	
-	\subsubsection{El Futuro de la Competencia}
+	\subsubsection{2.4.3. El Futuro de la Competencia}
+
+	Se ha evidenciado que tanto GSM/GPRS como LoRa encuentran aplicaciones concretas y valiosas en contextos muy distintos, la primera ha sido el pilar de la telemetría industrial, la banca móvil y los servicios de emergencia, tanto en el Perú como a nivel global; la segunda, en cambio, ha demostrado su eficacia en la agricultura de precisión, la medición inteligente de servicios públicos y la gestión urbana sostenible. Sin embargo, al observar las tendencias actuales del mercado y la evolución tecnológica, resulta cada vez más claro que el futuro de estas tecnologías no se define por una confrontación directa, sino por una reconfiguración de roles donde cada una ocupa el espacio para el cual fue concebida.\\
+
+	El declive de GSM/GPRS como plataforma de conectividad IoT es un proceso que ya está en marcha a nivel mundial. Países como Japón y Estados Unidos completaron el apagado total de sus redes 2G. En el Perú, aunque aún no se ha fijado una fecha oficial de cierre, el MTC ya ha expuesto propuestas sobre criterios y procedimientos para el apagado 2G, identificando que el 87 \% de la población con cobertura exclusivamente 2G se encuentra en áreas rurales. Este contexto obliga a los sectores que todavía dependen de módulos GSM/GPRS para sus dispositivos M2M, como la minería, la medición de servicios públicos y el rastreo vehicular, a planificar una migración tecnológica hacia alternativas celulares de nueva generación como NB-IoT y LTE-M, las cuales fueron diseñadas específicamente para el Internet de las Cosas con un consumo energético significativamente menor que GPRS, aunque sin alcanzar la eficiencia de LoRa en ese aspecto. Según Devasia (2026), las conexiones de IoT están creciendo a un ritmo interanual del 16 \%, y tecnologías como LTE Cat-1 y Cat-1 bis se están convirtiendo en las rutas de migración estándar conforme las redes 2G y 3G dejan de operar.\\
+
+	Frente a este escenario, LoRaWAN no se posiciona como reemplazo de las redes celulares, sino como un complemento especializado que atiende un segmento del mercado IoT donde las redes celulares resultan excesivas o económicamente inviables. TEKTELIC (2025), señala que las organizaciones están adoptando estrategias multitecnológicas, donde la capacidad de LoRaWAN para proporcionar conectividad privada, rentable y de bajo consumo energético lo posiciona como una pieza central de este enfoque híbrido. El mercado de IoT basado en LoRa y LoRaWAN fue valorado en 7,39 millones de dólares en 2024 y se proyecta que alcance los 68,12 millones de dólares para 2031, con una tasa de crecimiento anual compuesta del 35,30 \% (Mordor Intelligence, 2024). Estas cifras confirman que lejos de ser una tecnología marginal, LoRaWAN se encuentra en una fase de expansión acelerada que coincide precisamente con el periodo de obsolescencia de GSM/GPRS.\\
+
+	La propia LoRa Alliance ha dado un paso significativo al presentar en junio de 2026 su hoja de ruta técnica para el trienio 2026-2028, mediante la cual busca consolidar a LoRaWAN como lo que denomina el cuarto pilar de la conectividad inalámbrica global, complementando a las redes celulares, Wi-Fi y Bluetooth (LoRa Alliance, 2026). Esta hoja de ruta contempla tres líneas de trabajo concretas. En primer lugar, para 2026, se prevén mejoras en la migración de dispositivos entre distintas redes LoRaWAN, así como una extensión denominada Satellite Discovery Enhancements que estandarizará la forma en que los dispositivos finales detectan y se conectan a constelaciones satelitales LoRaWAN basadas en satélites LEO y GEO. En segundo lugar, para 2027, se incorporará un mecanismo de agilidad criptográfica que permitirá adaptar los esquemas de cifrado a futuros algoritmos, una medida preventiva ante el horizonte de la computación cuántica. En tercer lugar, para 2028, se introducirá un formato estándar de datos de aplicación que facilitará la interoperabilidad entre cualquier dispositivo y cualquier plataforma sin necesidad de integraciones a medida, junto con una API de analítica de red para la gestión unificada de despliegues complejos. Esta estrategia busca que LoRaWAN deje de ser la alternativa silenciosa del IoT para convertirse en infraestructura esencial del ecosistema de conectividad.\\
+
+	En lo que respecta al Perú, las implicaciones de esta reconfiguración competitiva son directas. El país cuenta con 11,6 millones de hectáreas de terreno agropecuario y una geografía que dificulta el despliegue de infraestructura celular en amplias zonas de la sierra y la selva. Precisamente en esos contextos, donde las estaciones base celulares resultan económicamente inviables para los operadores, LoRaWAN ofrece una alternativa que permite monitorear variables ambientales y productivas con una inversión inicial reducida y sin depender de suscripciones a operadores de telecomunicaciones. Sin embargo, la adopción de LoRa en el agro peruano enfrenta las barreras que ralentizan el progreso, como, por ejemplo, que el 95 \% de las empresas del sector son pequeñas o medianas con ingresos limitados, además de que persiste una desconfianza hacia la tecnología asociada al desconocimiento y al abandono estatal (Pérez y Risco, s.f.). Superar estas barreras requiere no solo reducción de costos tecnológicos, sino también programas de capacitación y políticas públicas que incentiven la adopción de IoT en el sector productivo rural.\\
+
+	Por otro lado, las aplicaciones de ciudades inteligentes descritas a nivel global, aparcamiento inteligente, telegestión del alumbrado, recolección de residuos, medición del agua, etc., representan oportunidades concretas para las municipalidades peruanas que buscan modernizar la gestión de sus servicios públicos. La experiencia internacional demuestra que estas soluciones no requieren grandes inversiones en infraestructura de red, ya que un solo gateway LoRaWAN puede cubrir varios kilómetros de radio urbano y gestionar miles de dispositivos simultáneamente.\\
+
+	En conclusión, el futuro de la competencia entre GSM/GPRS y LoRa no se resolverá mediante la sustitución de una tecnología por otra, sino a través de una especialización funcional donde cada una cede terreno y gana relevancia en ámbitos distintos. GSM y GPRS, como tecnologías celulares de segunda generación, serán progresivamente reemplazadas por sus sucesoras (4G, 5G, NB-IoT, LTE-M) en los mercados que demandan alta disponibilidad, calidad de servicio garantizada y gestión profesional de red. LoRaWAN, por su parte, consolidará su posición en el ecosistema IoT de bajo consumo y largo alcance, expandiendo su presencia hacia nuevos dominios como la conectividad satelital y fortaleciendo su interoperabilidad mediante estándares abiertos. En un país como el Perú, donde coexisten zonas urbanas con alta densidad de infraestructura celular y extensas regiones rurales prácticamente desconectadas, esta complementariedad no es una opción teórica sino una necesidad operativa.
 	
 	\subsection{Redes Moviles (2G, 3G y 5G)}
 	
