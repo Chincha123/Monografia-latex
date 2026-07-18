@@ -334,7 +334,6 @@
 		
 		\flushleft
 		\small % Tamaño de letra adecuado para las notas de tabla
-		\textit{Nota:} Actualizado con información reportada al 2025-I. \\
 	\end{table}
 	
 	\subsection{2.3. Seguridad, Privacidad y Fiabilidad}
@@ -463,33 +462,72 @@
 	
 	Esta tecnología según Flores (2022), mejorará la conectividad y reducirá considerablemente el tiempo de latencia. El tiempo de respuesta de la red podría reducirse hasta 5 milisegundos, que permite una conexión casi simultánea, como el manejo de dispositivos de manera autónoma y compartir su información en tiempo real.\\
 	El 5G tiende a tener una velocidad máxima de 10 Gbps en condiciones estándar, a esta rapidez, se puede descargar una película de alta definición en seis segundos aproximadamente (Constain, 2019).\\
-	Mayorga (2021) indica que la tecnología 5G reduce significativamente la latencia; el requerimiento tecnológico para su funcionamiento es la presencia de una red (cableado) de fibra óptica (hilos de vidrio o plástico) que envían información mediante señales luminosas y también de forma inalámbrica.
+	Mayorga (2021) indica que la tecnología 5G reduce significativamente la latencia; el requerimiento tecnológico para su funcionamiento es la presencia de una red (cableado) de fibra óptica (hilos de vidrio o plástico) que envían información mediante señales luminosas y también de forma inalámbrica. \\
 	
+	En el caso de bandas espectrales, Mayorga (2021), establece que dentro de la región se distribuye de la siguiente forma.Las  casillas  sombreadas  por  el  color  rosado  especifican  las  tecnologías usadas  sobre  esa  banda.  Las  casillas  en  amarillo  representan  una adjudicación  pero  se  usan  para  otros  sistemas;  se  encuentran  en reordenamiento, refarming o reorganización para uso IMT.
+
+	\begin{figure}[H]
+		\caption{\textit{Bandas espectrales asignadas en la región}}
+		\centering
+		\includegraphics[width=0.7\textwidth]{imagenes/BandasEspectrales3G-4G-5G.JPG}
+		\par
+		\vspace{0.3cm}
+		\raggedright
+		\small\textit{Nota: Las redes disponibles dentro de Sudamérica.} \\ \vspace{0.1cm} Extraido de: Mayorga, M. [Articulo].
+	\end{figure}
+
 	\subsubsection{Rol e infraestructura}
 	
 	Según la OSIPTEL, la infraestructura de acceso primordial para brindar dichos servicios son las Estaciones Base o Sites. Esta comprende de tres partes (i) elementos radiantes (antenas) que permiten la conexión inalámbrica a los equipos terminales de los usuarios con las Estaciones Base y el resto de la red de los operadores; (ii) una torre, que es la infraestructura sobre la que se soportan las antenas; y (iii) un armario de telecomunicaciones, donde se encuentran los elementos para el procesamiento de la información de voz y datos de los usuarios, que se conecta con las antenas mediante cables alimentadores. \\
 	En la infraestructura móvil, se cuenta con 4 estructuras de acceso. En primer lugar se encuentra la macro celdas, estas irradian la mayor potencia, las antenas que emplean son las de mayor tamaño, cubren mayor área y requieren ubicarse en posiciones altas; micro celdas, irradian menores potencias, las antenas son de menor tamaño y cubren menos área; pico celdas (extensores), son antenas de tamaño A4, estos brinda servicios dentros de los edificios y femto celdas, destinado a la cobertura en hogares y pequeños negocios, para el uso menor de personas.\\ \\
-	En primer lugar, con respecto a la arquitectura 3G (UMTS), Becvar (2015) indica que está compuesta de 3 partes principales:\\
-	Primero tenemos al UE  (equipo de usuario, que contiene el terminal móvil (MT) que gestiona todas las modificaciones en la interfaz (similar al MS) y el módulo de identidad del suscriptor (USIM) que incluye los datos del usuario (equivalente al SIM). Luego la UTRAN, que contiene a la Estación Base (Nodo B) que permite la conexión del UE a la red 3G (similar al BTS) y al Controlador de Red Radio que controla varios Nodos B conectados (guarda relación análoga con el BSC). Por último la CN (red del núcleo), se divide a nivel lógico en los dominios de conmutación de circuitos (CS, Circuited Switched) y conmutación de paquetes (PS, Packet Switched), también dispone de una función de tratamiento de voz similar al BSS. El propósito principal de las interfaces es permitir la comunicación directa entre las distintas entidades y facilitar su cooperación y coordinación. 
-	
+	En primer lugar, con respecto a la arquitectura 3G (UMTS), Becvar (2015) indica que está compuesta de 3 partes principales: \\
+	• UE (equipo de usuario), que contiene el terminal móvil (MT) que gestiona todas las modificaciones en la interfaz (similar al MS) y el módulo de identidad del suscriptor (USIM) que incluye los datos del usuario (equivalente al SIM).\\
+	• UTRAN,contiene a la Estación Base (Nodo B) se compone del mástil, antena, y el hardware y software necesario. Este permite la conexión del UE a la red 3G (similar al BTS) y al  RNC (Radio Network Controller) es responsable del control de varios nodos B conectados. En las redes 2G, el MSC y el SGSN juegan un papel más importante en relación de problemas de movilidad, tareas que no desarrolladas por el BSC y sí por el RNC. \\ 
+	• CN (red del núcleo), se divide a nivel lógico en los dominios de conmutación de circuitos (CS, Circuited Switched) y conmutación de paquetes (PS, Packet Switched), también dispone de una función de tratamiento de voz similar al BSS. El propósito principal de las interfaces es permitir la comunicación directa entre las distintas entidades y facilitar su cooperación y coordinación. 
+
+	%IMG ARQ - 3G
+	\begin{figure}[H]
+		\caption{\textit{Arquitectura de la Red 3G}}
+		\centering
+		\includegraphics[width=0.7\textwidth]{imagenes/Arq-3G.JPG}
+		\par
+		\vspace{0.3cm}
+		\raggedright
+		\small\textit{Nota: Se observan las fases que pasa la red 3G.} \\ \vspace{0.1cm} Extraido de: Techpedia - Becvar, Z. [Libro].
+	\end{figure}
+
+	El Estado Peruano por medio del MTC promueve la instalación de redes 3G y 4G a lo largo del territorio peruano. Mediante el mecanismo Canon por Cobertura, se llevaron servicios móviles 3G y 4G a 62 localidades rurales de la región San Martín, beneficiando a más de 12 mil ciudadanos que durante años permanecieron alejadas de estos servicios. Esta intervención demandó una inversión superior a los S/ 28,7 millones.
+
 	%IMG 3G
-	\begin{figure}[h!]
+	\begin{figure}[H]
 		\caption{\textit{Cobertura de la Red 3G}}
 		\centering
 		\includegraphics[width=0.5\textwidth]{imagenes/3G.JPG}
 		\par
 		\vspace{0.3cm}
 		\raggedright
-		\small\textit{Nota: Actualizado con información reportada al 2026-I.} \\ \vspace{0.1cm} Extraido de: ChecaTuSeñal - OSIPTEL [Página Web].
+		\small\textit{Nota: Actualizado con información reportada al 2026-I.} \\ \vspace{0.1cm} Extraido de: ResearchGate - Botran,X. [Informe].
 	\end{figure}
 	
 	Además Constain (2019) explica que en la arquitectura 4G, destaca dos partes:\\
 	La Red de Acceso (AN), éste contiene al eNode B (Enhanced Node B) Se encuentra al pie de la torre conectado a las antenas, además incorpora la funcionalidad del elemento RNC (Radio Network Controlle), el cual se encarga de discriminar entre conexiones de voz y de datos. Y la Red Troncal (CN), en cual alberga al HSS (Home Subscriber Server) que almacena los datos estáticos de los usuarios;el MME (Mobility Management Entity), gestiona control del dispositivo móvil realizando la identificación del usuario en combinación con el HSS; SGW (Serving Gateway), este aísla al elemento PGW de la movilidad de la red y PGW (Packet Data Network Gateway), asigna las direcciones IP que utiliza cada usuario y realiza tareas de control de los datos y de tarificación.\\
+
+	% IMG ARQ - 4G
+	\begin{figure}[H]
+		\caption{\textit{Arquitectura de la Red 4G}}
+		\centering
+		\includegraphics[width=0.7\textwidth]{imagenes/ARQ-4G.JPG}
+		\par
+		\vspace{0.3cm}
+		\raggedright
+		\small\textit{Nota: Se observan las fases que pasa la red 4G.} \\ \vspace{0.1cm} Extraido de: Udistrita - Constain, D. [Articulo].
+	\end{figure}
+
 	El MTC (2026) indica que la cobertura 4G se consolida y supera las 64 000 en 2025, lo que evidencia el proceso de modernización y transición tecnológica de las redes. Tras la suscripción de los contratos de concesión para la asignación de espectro radioeléctrico en la banda 3.5 GHz con las operadoras Bitel, Claro, Entel e Integratel (Movistar), el MTC estima que se acelerará el cierre de brechas de conectividad mediante mayor infraestructura de telecomunicaciones, que incluye compromisos de inversión y cobertura. También se está realizando una iniciativa  que involucra a América Móvil, Entel, Integratel y Bitel, y contempla inversiones superiores a S/182 millones para implementar infraestructura de telecomunicaciones en 22 regiones del país. Se prevé que las 412 localidades beneficiadas cuenten con el servicio hacia junio del 2027.\\
 	El Canon por Cobertura, mecanismo impulsado por el MTC, permite que las empresas operadoras destinen hasta el 60\% del pago por el uso del espectro radioeléctrico a inversiones en infraestructura móvil en localidades rurales.
 	
 	% IMG 4G
-	\begin{figure}[h!]
+	\begin{figure}[H]
 		\caption{\textit{Cobertura de la Red 4G}}
 		\centering
 		\includegraphics[width=0.5\textwidth]{imagenes/4G.JPG}
@@ -500,10 +538,21 @@
 	\end{figure}
 	
 	Para finalizar,  la arquitectura 5G conforma un sistema integral. con múltiples componentes interconectados. Este incluye un núcleo de red 5G Core, junto a protocolos de señalización y tecnología de área New Radio, que integra un principio avanzado de transmisión. Además soporta tres componentes: Banda Ancha Movil Mejorada (eMBB), para los servicios de alta velocidad, el mMTC (Comunicaciones Masivas Tipo Máquina) para Internet de las Cosas ampliado, el URLLC (Comunicaciones Ultra Confiables de Baja Latencia) con aplicaciones críticas en tiempo real. Asimismo, cuenta con tecnologías habilitadoras, incluye un espectro diversificado (comprende frecuencias milimétricas), MIMO Masivo (aumento de la capacidad por medio de múltiples antenas),  el Beamforming ( dirige señales hacia usuarios específicos) y ultimas adiciones incorpora redes no terrestres, servicio multicast y broadcast (transmisión de datos en redes) edge computing (almacén de datos), comunicacion dispositivo-dispositivo, etc (Cox, 2025). \\
+
+	\begin{figure}[H]
+		\caption{\textit{Arquitectura de la Red 5G}}
+		\centering
+		\includegraphics[width=0.7\textwidth]{imagenes/Arq-5G.JPG}
+		\par
+		\vspace{0.3cm}
+		\raggedright
+		\small\textit{Nota: Se observan las fases que pasa la red 5G.} \\ \vspace{0.1cm} Extraido de: ResearchGate - Botran,X. [Articulo].
+	\end{figure}
+
 	A la fecha, se han instalado 3,889 antenas 5G a nivel nacional, lo que representa un crecimiento superior al 800\% respecto al 2021, cuando se registraban alrededor de 400, informó el Ministerio de Transportes y Comunicaciones (MTC). Además, el despliegue de esta infraestructura permite mejorar la calidad de vida de los peruanos, sobre todo en las zonas rurales del país.
 	
 	% IMG 5G
-	\begin{figure}[h!]
+	\begin{figure}[H]
 		\caption{\textit{Cobertura de la Red 5G}}
 		\centering
 		\includegraphics[width=0.5\textwidth]{imagenes/5G.JPG}
@@ -541,7 +590,7 @@
 	
 	\subsubsection{Limitaciones y retos para el despliegue del 5G en el Perú}
 	
-	En Perú enfrenta conflictos por la gestión de las redes móviles a lo largo del país, con la implementación de la red 5G el problema se agrava debido a la diferenciación de redes móviles en nuestra región. Maquera (2026), establece que 50.8\% de los centros poblados carecen de acceso a las redes 4G y 5G durante el 2023. La brecha observada indica que la Selva es la región más desfavorecida (66.2\%), seguida de la Sierra (53.5\%) y por último la Costa (35.1\%). El principal problema es el déficit tecnológico, también se ve afectada por los factores geográficos y concentración de mercado, el cual requiere de políticas diferenciadas por zonas para garantizar la conectividad.\\
+	En Perú enfrenta conflictos por la gestión de las redes móviles a lo largo del país, con la implementación de la red 5G el problema se agrava debido a la diferenciación de redes móviles en nuestra región. Maquera (2026), por medio de un estudio establece que el 50.8\% de los centros poblados carecen de acceso a las redes 4G y 5G durante el 2023. La brecha observada indica que la Selva es la región más desfavorecida (66.2\%), seguida de la Sierra (53.5\%) y por último la Costa (35.1\%). El principal problema es el déficit tecnológico, también se ve afectada por los factores geográficos y concentración de mercado, el cual requiere de políticas diferenciadas por zonas para garantizar la conectividad.\\
 	Cabanillas (2025) establece que el gobierno debe adoptar un Indicador Consolidado como herramienta para orientar inversiones de telecomunicaciones hacia regiones que requiere inclusión digital, en vez de centrarse únicamente en la rentabilidad. Promueve un plan digital sostenible enfocado en equilibrar los retornos del sector privado con el interés público.
 	
 	\subsubsection{Marco legal y normativo}
