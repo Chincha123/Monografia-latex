@@ -148,13 +148,39 @@
 	
 	\textbf{\textit{	MS.}} La Estación Móvil o Mobile Station es el equipo que usa el usuario final para conectarse a la red, el aparato puede ser un teléfono simple, un smartphone, una tableta o incluso un módem para comunicaciones M2M; funciona como emisor, receptor o ambos, y ajusta su potencia de transmisión al mínimo necesario según lo que le indica la estación base con la que está en contacto (Huidobro, 2020). \\
 	
-	\textbf{\textit{	BTS.}} La BTS es la estación base encargada de mantener el enlace de radio entre el móvil y la red durante toda la comunicación: hacia el lado del usuario se conecta mediante la interfaz de aire, y hacia el lado de la red, se conecta al BSC a través de la interfaz Abis (Heine, 1999). Una sola BTS puede dar servicio a varias estaciones móviles a la vez, y el número de BTS que se necesitan en una zona se calcula según la cantidad de usuarios y el área geográfica que se quiere cubrir. \\
+	\textbf{\textit{	BTS.}} La BTS es la estación base encargada de mantener el enlace de radio entre el móvil y la red durante toda la comunicación: hacia el lado del usuario se conecta mediante la interfaz de aire, y hacia el lado de la red, se conecta al BSC a través de la interfaz Abis (Heine, 1999). Una sola BTS puede dar servicio a varias estaciones móviles a la vez, y el número de BTS que se necesitan en una zona se calcula según la cantidad de usuarios y el área geográfica que se quiere cubrir. Esta distribución se puede apreciar en la \textbf{figura 2}, donde se observa la disposición típica de las BTS en el terreno con celdas de diferentes tamaños. \\
+	
+			\begin{figure}[H]
+		\caption{\textit{BTS en configuración estándar}}
+		\centering
+		\includegraphics[width=0.5\textwidth]{imagenes/BTS.jpg}
+		\par
+		\vspace{0.3cm}
+		\raggedright
+		\small\textit{Nota: La figura muestra la disposición típica de las estaciones base (BTS) en una red celular, con celdas de distintos tamaños para cubrir un área geográfica determinada.} \\ \vspace{0.1cm} Extraido del documento de : Heine, G. [Libro].
+	\end{figure}
 	
 	\textbf{\textit{	BSC.}} El BSC administra a un grupo de BTS conectadas a él, y en muchos casos se ubica físicamente junto a una de ellas en vez de estar en un lugar separado (Electronics Notes, s.f.). Su función principal es gestionar los recursos de radio: asigna la estación base adecuada a cada móvil que se desplaza dentro de su sector, reparte los canales disponibles y ejecuta el handover, es decir, el cambio de canal cuando un usuario pasa de la cobertura de una BTS a otra sin cortar la llamada. La interfaz que conecta técnicamente al BSC con la BTS se conoce como interfaz Abis, definida formalmente en el estándar de arquitectura de red (ETSI, s.f.). \\
 	
+	\textbf{\textit{	MSC.}} El MSC son las siglas de Mobile Switching Center, o  traducido al español, Centro de Conmutación Móvil. Huidobro (2020) explica que el MSC es el nodo que conmuta las llamadas: interconecta a los usuarios de la red móvil entre sí o con la red fija, y mantiene las bases de datos necesarias para procesar cada solicitud. Forma parte de lo que se conoce como subsistema de conmutación de red (NSS). \\
+	
+	\textbf{\textit{	VLR.}} El Visitor Location Register (VLR) es una base de datos temporal vinculada al MSC que almacena la información de los abonados presentes en su área de servicio. Cuando un usuario se desplaza a una nueva zona, el VLR intercambia información con el HLR para gestionar su ubicación y facilitar el establecimiento de llamadas y la prestación de servicios mientras permanece registrado en esa área (ETSI, s. f.). \\
+
+	\textbf{\textit{	HLR.}} El HLR (Home Location Register) es la base de datos principal de la red GSM que almacena la información permanente de los abonados, como su identidad, los servicios que tienen habilitados y la ubicación aproximada de la red donde se encuentran registrados. Cuando un usuario intenta realizar o recibir una llamada, el HLR proporciona al MSC la información necesaria para localizarlo y verificar que tiene autorización para utilizar los servicios de la red. Además, trabaja en conjunto con el AuC durante el proceso de autenticación de los usuarios (Huidobro, 2020). Esta interacción entre el HLR y el VLR para la gestión de la ubicación del abonado se ilustra en la \textbf{figura 3}. \\	
+	
+			\begin{figure}[H]
+		\caption{\textit{Interacción entre HLR y VLR en la red GSM}}
+		\centering
+		\includegraphics[width=0.5\textwidth]{imagenes/vlryhlr.png}
+		\par
+		\vspace{0.3cm}
+		\raggedright
+		\small\textit{Nota: La figura representa el flujo de información entre el HLR y el VLR a través del MSC, incluyendo los procedimientos de actualización y eliminación de datos de ubicación de los abonados cuando se desplazan entre diferentes áreas de servicio.} \\ \vspace{0.1cm} Extraido de: Tel3pedia [Página Web].
+	\end{figure}
+	
 	\textbf{\textit{	AuC.}} El Centro de Autenticación, según ETSI (s.f.) es la base de datos que almacena la clave secreta de cada usuario y ejecuta el proceso criptográfico que verifica su identidad antes de autorizar cualquier comunicación. Se conecta al HLR mediante la interfaz H, especificada dentro del estándar de arquitectura de red de GSM. \\
 	
-	\textbf{\textit{	MSC.}} El MSC son las siglas de Mobile Switching Center, o  traducido al español, Centro de Conmutación Móvil. Huidobro (2020) explica que el MSC es el nodo que conmuta las llamadas: interconecta a los usuarios de la red móvil entre sí o con la red fija, y mantiene las bases de datos necesarias para procesar cada solicitud. Forma parte de lo que se conoce como subsistema de conmutación de red (NSS). \\
+	Esta distribución jerárquica, representada en la \textbf{figura 4}, permite que la red opere de manera eficiente, coordinando tanto el acceso por radio como el encaminamiento de las comunicaciones hacia su destino final. En conjunto, todos estos elementos trabajan de forma coordinada para garantizar la conectividad, la seguridad y la calidad del servicio en la red GSM. \\
 	
 	
 	\paragraph*{}
