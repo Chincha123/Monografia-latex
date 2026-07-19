@@ -182,6 +182,16 @@
 	
 	Esta distribución jerárquica, representada en la \textbf{figura 4}, permite que la red opere de manera eficiente, coordinando tanto el acceso por radio como el encaminamiento de las comunicaciones hacia su destino final. En conjunto, todos estos elementos trabajan de forma coordinada para garantizar la conectividad, la seguridad y la calidad del servicio en la red GSM. \\
 	
+		\begin{figure}[H]
+	\caption{\textit{Arquitectura de la red GSM}}
+	\centering
+	\includegraphics[width=0.5\textwidth]{imagenes/gsmArq.png}
+	\par
+	\vspace{0.3cm}
+	\raggedright
+	\small\textit{Nota: La figura muestra la interconexión jerárquica de los principales elementos que componen la red GSM, desde la Estación Móvil (MS) y las estaciones base (BTS) hasta los nodos de conmutación (MSC) y las bases de datos de abonados (HLR, VLR, AuC).} \\ \vspace{0.1cm} Extraido de: Researchgate [Página Web].
+\end{figure}	
+	
 	
 	\paragraph*{}
 	
@@ -193,9 +203,23 @@
 	
 	Cai y Goodman (1997) explican que, para lograr una transferencia de paquetes de extremo a extremo, se incorporan dos elementos nuevos a la arquitectura ya existente de GSM: la puerta de enlace GPRS (GGSN), que actúa como interfaz lógica hacia las redes externas de datos, y el nodo de soporte GPRS (SGSN), encargado de entregar los paquetes a los móviles dentro de su área de servicio. En breve se explica con más detalle cómo funciona cada uno de estos dos nodos. \\
 	
+	\textbf{\textit{	PCU.}} El PCU (Unidad de Control de Paquetes) es un enrutador de hardware que se añade al BSC para diferenciar el tráfico destinado a la red GSM tradicional, de conmutación de circuitos, del tráfico destinado a la red GPRS, de conmutación de paquetes. En muchas implementaciones actuales no es un equipo físicamente separado, sino que se integra directamente dentro del propio BSC para reducir costos de hardware (Electronics Notes, s.f.). \\
+	
 	\textbf{\textit{	SGSN.}} El SGSN (Nodo de Soporte GPRS en Servicio) es el nodo que, dentro de la red de datos, ocupa un lugar equivalente al que tiene el MSC en la red de voz. Se encarga de detectar a los móviles que se conectan a GPRS dentro de su área de servicio, gestionar su movilidad, verificar su autenticación y encargarse del envío y recepción de los paquetes de datos hacia y desde cada usuario (Bettstetter et al., 2001). \\
 	
 	\textbf{\textit{	GGSN.}} Según Mishra y Bradely (2001), el GGSN (Nodo de Soporte GPRS de Puerta de Enlace) actúa como la puerta de enlace entre la red GPRS del operador y las redes externas de datos, como Internet. Guarda la información de direccionamiento de los usuarios y la ruta hacia el SGSN que atiende a cada uno, de modo que puede encaminar correctamente los paquetes entrantes desde la red externa hasta el móvil correspondiente. \\
+	
+	En la {figura 5} se puede observar la integración de estos dos nuevos nodos (SGSN y GGSN) dentro de la arquitectura de red existente de GSM, donde el SGSN se conecta al BSC a través de la PCU (Unidad de Control de Paquetes) y el GGSN actúa como interfaz con redes externas como Internet u otras redes de datos. \\
+	
+			\begin{figure}[H]
+		\caption{\textit{Arquitectura de red GSM con GPRS}}
+		\centering
+		\includegraphics[width=0.5\textwidth]{imagenes/gprsArq.jpg}
+		\par
+		\vspace{0.3cm}
+		\raggedright
+		\small\textit{Nota: La figura muestra la integración de los nodos GPRS (SGSN y GGSN) en la arquitectura GSM existente, donde el SGSN se conecta al BSC a través de la PCU para el manejo de paquetes de datos, mientras que el GGSN actúa como interfaz hacia redes externas como Internet u otras redes de datos.} \\ \vspace{0.1cm} Extraido de: Researchgate [Página Web].
+	\end{figure}
 	
 	\paragraph*{}
 	
