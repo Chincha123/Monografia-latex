@@ -131,7 +131,9 @@
 	Para analizar la evolución y el funcionamiento de las tecnologías inalámbricas GSM, GPRS y LoRa, es necesario aclarar a continuación, los conceptos básicos que permitirán comprender mejor su compleja arquitectura:
 	\paragraph*{}
 	
-	\textbf{Red Celular.} Es una infraestructura de telecomunicaciones la cual Huidobro (2020) concibe de forma técnica como dividir el territorio al que se pretende dar servicio en células, o celdas (normalmente hexagonales), cada una servida por una estación base o de radio, que permite ofrecer cobertura continua y reutilizar frecuencias sin interferencia entre células no adyacentes. Esto permite dar servicio a un gran número de usuarios con un número limitado de frecuencias. \\
+	\textbf{Red Celular} \mbox{}\\
+	
+	Es una infraestructura de telecomunicaciones la cual Huidobro (2020) concibe de forma técnica como dividir el territorio al que se pretende dar servicio en células, o celdas (normalmente hexagonales), cada una servida por una estación base o de radio, que permite ofrecer cobertura continua y reutilizar frecuencias sin interferencia entre células no adyacentes. Esto permite dar servicio a un gran número de usuarios con un número limitado de frecuencias. \\
 	
 	Como se ilustra en la \textbf{figura 1}, el tamaño de las celdas no es uniforme, sino que se adapta a las características del territorio y a la demanda de comunicaciones. Según la explicación de Edu Area (2015), en las zonas rurales con menor densidad de población, las celdas son de gran tamaño, pudiendo alcanzar hasta varios kilómetros, ya que el objetivo principal es garantizar la cobertura geográfica más amplia posible con un número reducido de estaciones base. En contraste, en las zonas urbanas con alta densidad de población, donde el número de comunicaciones es elevado, las celdas tienden a ser numerosas y de pequeño tamaño, con radios que pueden reducirse a centenares o incluso a solo unas decenas de metros. Esta disminución del tamaño de las celdas, incrementa la capacidad de transmisión de tráfico de voz y datos de la red, aunque requiere desplegar un mayor número de estaciones base.
 	
@@ -145,7 +147,7 @@
 		\small\textit{Nota: La figura ilustra cómo el tamaño de las celdas varía en función de la densidad de población y la demanda de comunicaciones.} \\ \vspace{0.1cm} Extraido de: Edu Area [Youtube].
 	\end{figure}
 	
-	\paragraph*{\textbf{\textit{	GSM.}}}
+	\paragraph*{\textbf{\textit{GSM}}} \mbox{}\\
 	
 	El Sistema Global para Comunicaciones Móviles (GSM) es el primer sistema de comunicaciones móviles digitales del mundo que ha logrado una aceptación global. Su objetivo principal fue crear un estándar paneuropeo que permitiera a sus suscriptores, utilizar sus teléfonos móviles en toda Europa y, posteriormente, en todo el mundo. GSM representa la segunda generación de la telefonía móvil, superando a los sistemas analógicos anteriores de primera generación (Tisal, 1999). \\
 	
@@ -155,9 +157,13 @@
 	
 	A continuación se detalla la arquitectura que compone a la red GSM, describiendo cada uno de sus elementos principales, desde el equipo que utiliza el usuario final hasta los nodos encargados de gestionar la conmutación y seguridad de las comunicaciones dentro de la red. \\
 	
-	\textbf{\textit{	MS.}} La Estación Móvil o Mobile Station es el equipo que usa el usuario final para conectarse a la red, el aparato puede ser un teléfono simple, un smartphone, una tableta o incluso un módem para comunicaciones M2M; funciona como emisor, receptor o ambos, y ajusta su potencia de transmisión al mínimo necesario según lo que le indica la estación base con la que está en contacto (Huidobro, 2020). \\
+	\textbf{\textit{	MS}} \mbox{}\\
 	
-	\textbf{\textit{	BTS.}} La BTS es la estación base encargada de mantener el enlace de radio entre el móvil y la red durante toda la comunicación: hacia el lado del usuario se conecta mediante la interfaz de aire, y hacia el lado de la red, se conecta al BSC a través de la interfaz Abis (Heine, 1999). Una sola BTS puede dar servicio a varias estaciones móviles a la vez, y el número de BTS que se necesitan en una zona se calcula según la cantidad de usuarios y el área geográfica que se quiere cubrir. Esta distribución se puede apreciar en la \textbf{figura 2}, donde se observa la disposición típica de las BTS en el terreno con celdas de diferentes tamaños. \\
+	La Estación Móvil o Mobile Station es el equipo que usa el usuario final para conectarse a la red, el aparato puede ser un teléfono simple, un smartphone, una tableta o incluso un módem para comunicaciones M2M; funciona como emisor, receptor o ambos, y ajusta su potencia de transmisión al mínimo necesario según lo que le indica la estación base con la que está en contacto (Huidobro, 2020). \\
+	
+	\textbf{\textit{	BTS}}  \mbox{}\\
+	
+	La BTS es la estación base encargada de mantener el enlace de radio entre el móvil y la red durante toda la comunicación: hacia el lado del usuario se conecta mediante la interfaz de aire, y hacia el lado de la red, se conecta al BSC a través de la interfaz Abis (Heine, 1999). Una sola BTS puede dar servicio a varias estaciones móviles a la vez, y el número de BTS que se necesitan en una zona se calcula según la cantidad de usuarios y el área geográfica que se quiere cubrir. Esta distribución se puede apreciar en la \textbf{figura 2}, donde se observa la disposición típica de las BTS en el terreno con celdas de diferentes tamaños. \\
 	
 			\begin{figure}[H]
 		\caption{\textit{BTS en configuración estándar}}
@@ -169,13 +175,21 @@
 		\small\textit{Nota: La figura muestra la disposición típica de las estaciones base (BTS) en una red celular, con celdas de distintos tamaños para cubrir un área geográfica determinada.} \\ \vspace{0.1cm} Extraido del documento de : Heine, G. [Libro].
 	\end{figure}
 	
-	\textbf{\textit{	BSC.}} El BSC administra a un grupo de BTS conectadas a él, y en muchos casos, se ubica físicamente junto a una de ellas en vez de estar en un lugar separado (Poole, s.f.). Su función principal es gestionar los recursos de radio: asigna la estación base adecuada a cada móvil que se desplaza dentro de su sector, reparte los canales disponibles y ejecuta el handover, es decir, el cambio de canal cuando un usuario pasa de la cobertura de una BTS a otra sin cortar la llamada. La interfaz que conecta técnicamente al BSC con la BTS se conoce como interfaz Abis, definida formalmente en el estándar de arquitectura de red (ETSI, 1996). \\
+	\textbf{\textit{	BSC}} \mbox{}\\
 	
-	\textbf{\textit{	MSC.}} El MSC son las siglas de Mobile Switching Center, o  traducido al español, Centro de Conmutación Móvil. Huidobro (2020) explica que el MSC es el nodo que conmuta las llamadas: interconecta a los usuarios de la red móvil entre sí o con la red fija, y mantiene las bases de datos necesarias para procesar cada solicitud. Forma parte de lo que se conoce como subsistema de conmutación de red (NSS). \\
+	El BSC administra a un grupo de BTS conectadas a él, y en muchos casos, se ubica físicamente junto a una de ellas en vez de estar en un lugar separado (Poole, s.f.). Su función principal es gestionar los recursos de radio: asigna la estación base adecuada a cada móvil que se desplaza dentro de su sector, reparte los canales disponibles y ejecuta el handover, es decir, el cambio de canal cuando un usuario pasa de la cobertura de una BTS a otra sin cortar la llamada. La interfaz que conecta técnicamente al BSC con la BTS se conoce como interfaz Abis, definida formalmente en el estándar de arquitectura de red (ETSI, 1996). \\
 	
-	\textbf{\textit{	VLR.}} El Visitor Location Register (VLR) es una base de datos temporal vinculada al MSC que almacena la información de los abonados presentes en su área de servicio. Cuando un usuario se desplaza a una nueva zona, el VLR intercambia información con el HLR para gestionar su ubicación y facilitar el establecimiento de llamadas y la prestación de servicios mientras permanece registrado en esa área (ETSI, 1996). \\
+	\textbf{\textit{	MSC}} \mbox{}\\
+	
+	El MSC son las siglas de Mobile Switching Center, o  traducido al español, Centro de Conmutación Móvil. Huidobro (2020) explica que el MSC es el nodo que conmuta las llamadas: interconecta a los usuarios de la red móvil entre sí o con la red fija, y mantiene las bases de datos necesarias para procesar cada solicitud. Forma parte de lo que se conoce como subsistema de conmutación de red (NSS). \\
+	
+	\textbf{\textit{	VLR}} \mbox{}\\
+	
+	El Visitor Location Register (VLR) es una base de datos temporal vinculada al MSC que almacena la información de los abonados presentes en su área de servicio. Cuando un usuario se desplaza a una nueva zona, el VLR intercambia información con el HLR para gestionar su ubicación y facilitar el establecimiento de llamadas y la prestación de servicios mientras permanece registrado en esa área (ETSI, 1996). \\
 
-	\textbf{\textit{	HLR.}} El HLR (Home Location Register) es la base de datos principal de la red GSM que almacena la información permanente de los abonados, como su identidad, los servicios que tienen habilitados y la ubicación aproximada de la red donde se encuentran registrados. Cuando un usuario intenta realizar o recibir una llamada, el HLR proporciona al MSC la información necesaria para localizarlo y verificar que tiene autorización para utilizar los servicios de la red. Además, trabaja en conjunto con el AuC durante el proceso de autenticación de los usuarios (Huidobro, 2020). Esta interacción entre el HLR y el VLR para la gestión de la ubicación del abonado se ilustra en la \textbf{figura 3}. \\	
+	\textbf{\textit{	HLR}} \mbox{}\\
+	
+	El HLR (Home Location Register) es la base de datos principal de la red GSM que almacena la información permanente de los abonados, como su identidad, los servicios que tienen habilitados y la ubicación aproximada de la red donde se encuentran registrados. Cuando un usuario intenta realizar o recibir una llamada, el HLR proporciona al MSC la información necesaria para localizarlo y verificar que tiene autorización para utilizar los servicios de la red. Además, trabaja en conjunto con el AuC durante el proceso de autenticación de los usuarios (Huidobro, 2020). Esta interacción entre el HLR y el VLR para la gestión de la ubicación del abonado se ilustra en la \textbf{figura 3}. \\	
 	
 			\begin{figure}[H]
 		\caption{\textit{Interacción entre HLR y VLR en la red GSM}}
@@ -187,7 +201,9 @@
 		\small\textit{Nota: La figura representa el flujo de información entre el HLR y el VLR a través del MSC, incluyendo los procedimientos de actualización y eliminación de datos de ubicación de los abonados cuando se desplazan entre diferentes áreas de servicio.} \\ \vspace{0.1cm} Extraido de: Tel3pedia [Página Web].
 	\end{figure}
 	
-	\textbf{\textit{	AuC.}} El Centro de Autenticación, según ETSI (1996) es la base de datos que almacena la clave secreta de cada usuario y ejecuta el proceso criptográfico que verifica su identidad antes de autorizar cualquier comunicación. Se conecta al HLR mediante la interfaz H, especificada dentro del estándar de arquitectura de red de GSM. \\
+	\textbf{\textit{	AuC}} \mbox{}\\
+	
+	El Centro de Autenticación, según ETSI (1996) es la base de datos que almacena la clave secreta de cada usuario y ejecuta el proceso criptográfico que verifica su identidad antes de autorizar cualquier comunicación. Se conecta al HLR mediante la interfaz H, especificada dentro del estándar de arquitectura de red de GSM. \\
 	
 	Esta distribución jerárquica, representada en la \textbf{figura 4}, permite que la red opere de manera eficiente, coordinando tanto el acceso por radio como el encaminamiento de las comunicaciones hacia su destino final. En conjunto, todos estos elementos trabajan de forma coordinada para garantizar la conectividad, la seguridad y la calidad del servicio en la red GSM. \\
 	
@@ -204,7 +220,9 @@
 	
 	\paragraph*{}
 	
-	\textbf{\textit{	GPRS.}}  General Packet Radio Service supuso un antes y un después en la evolución de GSM. Se trata de un servicio de datos por paquetes que llegó con la Fase 2+ del estándar, pensado especialmente para aprovechar mejor el espectro radioeléctrico cuando se transmiten datos de naturaleza intermitente o "ráfaga", como ocurre al navegar por Internet o enviar correos electrónicos, y para que los operadores pudieran repartir sus recursos de forma dinámica y flexible entre los servicios de datos y los tradicionales de voz (Cai y Goodman, 1997). \\ 
+	\paragraph*{\textbf{\textit{GPRS}}} \mbox{}\\
+	
+	General Packet Radio Service supuso un antes y un después en la evolución de GSM. Se trata de un servicio de datos por paquetes que llegó con la Fase 2+ del estándar, pensado especialmente para aprovechar mejor el espectro radioeléctrico cuando se transmiten datos de naturaleza intermitente o "ráfaga", como ocurre al navegar por Internet o enviar correos electrónicos, y para que los operadores pudieran repartir sus recursos de forma dinámica y flexible entre los servicios de datos y los tradicionales de voz (Cai y Goodman, 1997). \\ 
 	
 	En cuanto a su origen, GPRS surgió a mediados de la década de los 90, cuando el ETSI (European Telecommunication Standard Institute) tomó la decisión de establecer un nuevo estándar basado en el interfaz aire de GSM para la transmisión de paquetes vía radio, de ahí su otra denominación, GSM-IP, ya que permitía integrar los protocolos de Internet TCP/IP con la red móvil GSM ya instalada. Esta decisión respondía a las limitaciones del sistema GSM original, diseñado bajo un modelo de conmutación de circuitos que reservaba los recursos de red durante toda la comunicación, incluso cuando no se transmitían datos (Sánchez, 2005). \\
 	
@@ -212,11 +230,17 @@
 	
 	Cai y Goodman (1997) explican que, para lograr una transferencia de paquetes de extremo a extremo, se incorporan dos elementos nuevos a la arquitectura ya existente de GSM: la puerta de enlace GPRS (GGSN), que actúa como interfaz lógica hacia las redes externas de datos, y el nodo de soporte GPRS (SGSN), encargado de entregar los paquetes a los móviles dentro de su área de servicio. En breve se explica con más detalle cómo funciona cada uno de estos dos nodos. \\
 	
-	\textbf{\textit{	PCU.}} El PCU (Unidad de Control de Paquetes) es un enrutador de hardware que se añade al BSC para diferenciar el tráfico destinado a la red GSM tradicional, de conmutación de circuitos, del tráfico destinado a la red GPRS, de conmutación de paquetes. En muchas implementaciones actuales, no es un equipo físicamente separado, sino que se integra directamente dentro del propio BSC para reducir costos de hardware (Poole, s.f.). \\
+	\textbf{\textit{	PCU}} \mbox{}\\
 	
-	\textbf{\textit{	SGSN.}} El SGSN (Nodo de Soporte GPRS en Servicio) es el nodo que, dentro de la red de datos, ocupa un lugar equivalente al que tiene el MSC en la red de voz. Se encarga de detectar a los móviles que se conectan a GPRS dentro de su área de servicio, gestionar su movilidad, verificar su autenticación y encargarse del envío y recepción de los paquetes de datos hacia y desde cada usuario (Bettstetter et al., 2001). \\
+	El PCU (Unidad de Control de Paquetes) es un enrutador de hardware que se añade al BSC para diferenciar el tráfico destinado a la red GSM tradicional, de conmutación de circuitos, del tráfico destinado a la red GPRS, de conmutación de paquetes. En muchas implementaciones actuales, no es un equipo físicamente separado, sino que se integra directamente dentro del propio BSC para reducir costos de hardware (Poole, s.f.). \\
 	
-	\textbf{\textit{	GGSN.}} Según Mishra (2001), el GGSN (Nodo de Soporte GPRS de Puerta de Enlace) actúa como la puerta de enlace entre la red GPRS del operador y las redes externas de datos, como el Internet. Guarda la información de direccionamiento de los usuarios y la ruta hacia el SGSN que atiende a cada uno, de modo que puede encaminar correctamente los paquetes entrantes desde la red externa hasta el móvil correspondiente. \\
+	\textbf{\textit{	SGSN}} \mbox{}\\
+	
+	El SGSN (Nodo de Soporte GPRS en Servicio) es el nodo que, dentro de la red de datos, ocupa un lugar equivalente al que tiene el MSC en la red de voz. Se encarga de detectar a los móviles que se conectan a GPRS dentro de su área de servicio, gestionar su movilidad, verificar su autenticación y encargarse del envío y recepción de los paquetes de datos hacia y desde cada usuario (Bettstetter et al., 2001). \\
+	
+	\textbf{\textit{	GGSN}} \mbox{}\\
+	
+	Según Mishra (2001), el GGSN (Nodo de Soporte GPRS de Puerta de Enlace) actúa como la puerta de enlace entre la red GPRS del operador y las redes externas de datos, como el Internet. Guarda la información de direccionamiento de los usuarios y la ruta hacia el SGSN que atiende a cada uno, de modo que puede encaminar correctamente los paquetes entrantes desde la red externa hasta el móvil correspondiente. \\
 	
 	En la \textbf{figura 5} se puede observar la integración de estos dos nuevos nodos (SGSN y GGSN) dentro de la arquitectura de red existente de GSM, donde el SGSN se conecta al BSC a través de la PCU (Unidad de Control de Paquetes) y el GGSN actúa como interfaz con redes externas como Internet u otras redes de datos. \\
 	
@@ -232,7 +256,9 @@
 	
 	\paragraph*{}
 	
-	\textbf{LoRa.} Si hablamos de transmisión de datos, sin duda alguna, tenemos que hablar del internet de las cosas (IoT), esta tecnología, es la encargada de permitir que ciertos dispositivos inteligentes se comuniquen entre sí y a su vez, con otros dispositivos conectados a Internet (IBM, s.f), pero estos datos no se teletransportan y automáticamente aparecen en el dispositivo receptor, sino que deben viajar a través de una red inalámbrica para poder ser recibidos y posteriormente manipulados. Existen diversos tipos de redes que pueden llevar a cabo esta función, por ejemplo, están las LPWAN (Low Power Wide Area Networks), las cuales suponen una alternativa real y eficiente a las conexiones de datos móviles ya implantadas en telemetría, aunque solo para bajos volúmenes de datos (Sinelec, s.f). Entre las redes de este tipo, pero que son de uso libre, destaca LoRa y su protocolo LoRaWAN.\\
+	\textbf{LoRa} \mbox{}\\
+	
+	Si hablamos de transmisión de datos, sin duda alguna, tenemos que hablar del internet de las cosas (IoT), esta tecnología, es la encargada de permitir que ciertos dispositivos inteligentes se comuniquen entre sí y a su vez, con otros dispositivos conectados a Internet (IBM, s.f), pero estos datos no se teletransportan y automáticamente aparecen en el dispositivo receptor, sino que deben viajar a través de una red inalámbrica para poder ser recibidos y posteriormente manipulados. Existen diversos tipos de redes que pueden llevar a cabo esta función, por ejemplo, están las LPWAN (Low Power Wide Area Networks), las cuales suponen una alternativa real y eficiente a las conexiones de datos móviles ya implantadas en telemetría, aunque solo para bajos volúmenes de datos (Sinelec, s.f). Entre las redes de este tipo, pero que son de uso libre, destaca LoRa y su protocolo LoRaWAN.\\
 	
 	Según The Things Network (s.f), se define a la red LoRa (Long Range o Largo Alcance en español), como una técnica de modulación inalámbrica de radiofrecuencia, basado en la tecnología de espectro ensanchado por chirrido (CSS). Es decir, es la capa física que se va a complementar con los dispositivos conectados de forma inalámbrica con un largo alcance y usando la menor cantidad de energía posible.\\
 	
@@ -243,7 +269,9 @@
 	
 	\paragraph*{}
 	
-	\textbf{\textit{Espectro Ensanchado por Chirridos (CSS).}} “Esta es una tecnología de radiofrecuencia de alto alcance para comunicaciones inalámbricas” (Inpixon, s.f). Básicamente, este tipos de ondas, permiten distribuir señales de radio en un rango mucho más amplio que cualquier otro y de una manera un tanto diferente, a comparación de las ondas sinusoidales a las que se les puede modificar tanto la amplitud como la frecuencia para poder captar una información de distinta calidad, este tipo de espectro se divide en chirps ascendentes y descendentes \textbf{(figura 1)}, siendo estos, lineas rectas  que tienen como estándares de medida: velocidad de barrido y el ancho de banda \textbf{(figura 2)}.
+	\textbf{\textit{Espectro Ensanchado por Chirridos (CSS).}} \mbox{}\\
+	
+	“Esta es una tecnología de radiofrecuencia de alto alcance para comunicaciones inalámbricas” (Inpixon, s.f). Básicamente, este tipos de ondas, permiten distribuir señales de radio en un rango mucho más amplio que cualquier otro y de una manera un tanto diferente, a comparación de las ondas sinusoidales a las que se les puede modificar tanto la amplitud como la frecuencia para poder captar una información de distinta calidad, este tipo de espectro se divide en chirps ascendentes y descendentes \textbf{(figura 6)}, siendo estos, lineas rectas  que tienen como estándares de medida: velocidad de barrido y el ancho de banda \textbf{(figura 7)}.
 	La causa por la que presentan esta peculiar forma, se atribuye a la facilidad por la que pueden ser identificadas y aisladas de cualquier otro ruido proveniente del ambiente o entorno, de esta manera, este tipo de espectro tiene como cualidad, la alta tolerancia a interferencias ambientales.\\
 	
 	Incrementar el ancho de banda, otorgará una mejor calidad de señal, sin embargo, es muy costosa e incrementaría el volúmen de información que se desea transmitir, aún cuando no sea necesario, debido al tamaño de los datos que envían los dispositivos IoT. Por lo que no cumpliría con los estándares de LoRa, además, el ancho de banda de cada dispositivo conectado a esta tenologia, ya está determinado por organizaciones internacionales, siendo las escogidas: 500kHz, 250kHz y 125kHz.
@@ -269,7 +297,9 @@
 	\end{figure}
 	\paragraph*{}
 	
-	\textbf{\textit{Spreading Factor}} La información que se decodifica a partir de las ondas recibidas se le denomina símbolos, los cuales son conjuntos de bits que se construyen a partir de diferentes chirps.
+	\textbf{\textit{Spreading Factor}} \mbox{}\\
+	
+	La información que se decodifica a partir de las ondas recibidas se le denomina símbolos, los cuales son conjuntos de bits que se construyen a partir de diferentes chirps.
 	Antes de comenzar con la información a interpretar, el dispositivo envía una “alerta”. Esta alerta consiste en 8 barridos hacia arriba, seguido de 2 barridos hacia abajo, este primer bloque de 8 barridos se denomina preámbulo, y los otros 2 barridos restantes se denominan tiempo de sincronizado (Wenner, 2018).\\
 	
 	La duración de los símbolos anteriormente mencionados, dependen de un factor llamado spreading factor o factor de dispersión (SR), estos representan el número de bits crudos(chips) que se pueden decodificar, teniendo el símbolo, como máximo $2^{SF}$ valores. Por lo general, este factor de dispersión suele estar entre 7 y 15, aunque actualmente se está experimentando con SF más bajos para aplicaciones de corto alcance que requieren mayor ancho de banda (Casado, s.f).\\
@@ -279,7 +309,7 @@
 	Esta cantidad es la cantidad en que se divide la señal de barrido, siendo la unidad, un chip.\\
 	
 	El valor decimal de cada simbolo estaria denotado de la siguiente manera:
-	cada chirrido comenzaría en la cantidad de chips que denote el símbolo, es decir, si el símbolo valiera 64, el chirrido comienza en esa posición partiendo desde la baja frecuencia, hasta llegar a la mitad, ya que 64 es el 50 por ciento de 128, al llegar a la alta frecuencia, pasaría por el wrap around, en el cual hace un salto e inicia en el mismo símbolo pero desde abajo, para poder completar su recorrido en el tiempo asignado, tal y como se muestra en la \textbf{(figura 3)}.
+	cada chirrido comenzaría en la cantidad de chips que denote el símbolo, es decir, si el símbolo valiera 64, el chirrido comienza en esa posición partiendo desde la baja frecuencia, hasta llegar a la mitad, ya que 64 es el 50 por ciento de 128, al llegar a la alta frecuencia, pasaría por el wrap around, en el cual hace un salto e inicia en el mismo símbolo pero desde abajo, para poder completar su recorrido en el tiempo asignado, tal y como se muestra en la \textbf{(figura 8)}.
 	\begin{figure}[H]
 		\caption{\textit{Representación del valor en bits de un símbolo y la influencia del spreading factor, la cual denota información captada.}}
 		\centering
@@ -291,10 +321,12 @@
 	\end{figure}
 	\paragraph*{}
 	
-	\textbf{\textit{Protocolo LoRaWAN.}} LoRaWAN es el protocolo de capa de control de acceso (MAC) basado en la modulación LoRa. Se trata de una capa de software que define como los dispositivos conectados, usan el hardware LoRa, como por ejemplo, el tipo de mensaje o con que frecuencia es que estos se transmiten (The Things Network, s.f).\\
+	\textbf{\textit{Protocolo LoRaWAN.}} \mbox{}\\
+	
+	LoRaWAN es el protocolo de capa de control de acceso (MAC) basado en la modulación LoRa. Se trata de una capa de software que define como los dispositivos conectados, usan el hardware LoRa, como por ejemplo, el tipo de mensaje o con que frecuencia es que estos se transmiten (The Things Network, s.f).\\
 	
 	Muchas veces existe la confusión de pensar que LoRa y LoRaWAN son lo mismo, sin embargo no lo son. En primer lugar, LoRa es la capa física, donde se definen las especificaciones que se deben seguir para la transferencia de datos. Mientras que LoRaWAN, vendría siendo la tecnología que vincula a LoRa con la aplicación que recibe los datos. Análogamente, se podría relacionar con el vínculo que tiene Linux(kernel), con el sistema operativo GNU Linux.
-	La correlación entre estos dos conceptos se puede apreciar en la \textbf{figura 4}:
+	La correlación entre estos dos conceptos se puede apreciar en la \textbf{figura 9}:
 	\begin{figure}[H]
 		\caption{\textit{Diferencia entre LoRa y su protocola LoRaWAN, graficado en un diagrama secuencial.}}
 		\centering
@@ -315,7 +347,9 @@
 	Finalmente tenemos la capa de aplicación, en el cual los datos llegan a ser recibidos y descifrados por completo, entonces es la etapa donde se decide que hacer con ellos. Sin antes haber pasado por LoRaMAC, el cual se encarga del empaquetado, direccionamiento, seguridad y encriptación.
 	
 	\paragraph*{}
-	\textbf{\textit{Arquitectura de LoRaWAN.}} Una arquitectura típica de LoRaWAN está compuesta de la siguiente manera:
+	\textbf{\textit{Arquitectura de LoRaWAN.}} \mbox{}\\
+	
+	Una arquitectura típica de LoRaWAN está compuesta de la siguiente manera:
 	\begin{itemize}
 		\item \textbf{Nodos Finales}
 		\item \textbf{Gateways}
@@ -339,7 +373,7 @@
 	
 	Este apartado desarrolla una evaluación comparativa entre la tecnología GSM/GPRS y LoRa. A continuación, se examinarán las principales métricas de rendimiento para establecer qué tecnología se adapta mejor a diferentes requisitos operativos y energéticos.
 	
-	\paragraph*{GSM}
+	\paragraph*{GSM} \mbox{}\\
 	
 	En redes GSM, las aplicaciones operan en la banda de 900 MHz. El constante incremento del tráfico de datos dio lugar a distintas versiones con múltiples ancho de banda. En este caso se enseñara 2 estándares:\\	
 	• GSM 900 – banda de frecuencia de 900 MHz, ancho de banda de 2 × 25 MHz.\\
@@ -350,13 +384,13 @@
 	
 	Castilla (2005) y (Sanchez, 2005), destacan que GSM es un sistema originalmente diseñado para voz y  mensajes cortos (SMS), el cual permite tasas de transferencia de 9.6 Kbps. No fue concebido para transmisión eficiente de datos .
 	
-	\paragraph*{GPRS}
+	\paragraph*{GPRS} \mbox{}\\
 	
 	Al ser una versión mejorada del GSM, las redes GPRS manejan similares anchos de banda a las GSM. Sin embargo, presenta mayor eficiencia espectral que GSM puro al no reservar canal dedicado todo el tiempo, además la diferencia recae en las tasas de transferencias (Zhunio, 2008).\\
 	
 	Sanchez (2005) agrega que GPRS tiene un máximo de velocidad  de transferencia de 100 kbps de forma estándar (aunque teóricamente es de 171.2 kbps). Así mismo, se establece el uso de las velocidades de la conexión GPRS en 128Kbps para su operación con internet y transacciones de datos (Moy, 2009) .
 	
-	\paragraph*{LoRa}
+	\paragraph*{LoRa} \mbox{}\\
 	
 	Ordoñez (2017) indica que LoRa opera en bandas ISM por debajo de 1GHz (en Europa corresponde bandas de 433-868 MHz), al ser banda libre se puede utilizar sin licencia. También operan en la banda de frecuencias no licenciada de 900 MHz  (Gonzalez, 2024).\\
 	
@@ -494,7 +528,7 @@
 	En el caso de las aplicaciones de \textbf{LoRa a nivel mundial}, a diferencia de nuestro país, el cual sufre de un marcado “retraso” en lo que a avances tecnológicos respecta, muchos de los países que son considerados como potencias mundiales, ya tienen claro empezar a desarrollar a lo largo de su territorio, lo que se conoce como una ciudad inteligente (smart city), según Gomstyn \& Jonker (s.f.), esta es una zona urbana en la que la tecnología y la recopilación de datos contribuyen a mejorar la calidad de vida, sostenibilidad y el funcionamiento eficiente de la ciudad. Entre dichas tecnologías destacan las de tecnología de la información y la comunicación (TIC) y el Internet de las cosas (IoT).\\
 
 	Con esto, no se trata de desmeritar los intentos por incluir a la tecnología como principal soporte en la vida de las personas en el Perú, al contrario, se busca que se tome como ejemplo estas aplicaciones y se puedan poner en práctica en cualquier tipo de ambiente, desde zonas urbanas hasta rurales
-	Entre los casos más comunes de LoRaWAN en una ciudad inteligente, resaltan 6 en particular que se irán acotando por orden, tal y como se aprecia en la \textbf{figura 5:} 
+	Entre los casos más comunes de LoRaWAN en una ciudad inteligente, resaltan 6 en particular que se irán acotando por orden, tal y como se aprecia en la \textbf{figura 10:} 
 	
 	\begin{figure}[H]
 		\caption{\textit{Aplicaciones más comúnes de LoRaWAN en los prospectos de ciudades inteligentes.}}
